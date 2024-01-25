@@ -1,0 +1,8 @@
+---
+- name: Custom Facts
+  hosts: prod
+  gather_facts: true
+  tasks:
+    - name: Print Custom Facts
+      debug:
+        var: ansible_local['test-custom']['general']['env']

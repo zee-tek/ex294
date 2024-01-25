@@ -1,0 +1,20 @@
+---
+- name: Push Custom Facts
+  hosts: prod
+  tasks:
+    - name: Create ansible facts directories
+      file:
+        path: /etc/ansible/facts.d
+        state: directory
+
+    - name: Pushing Custom Files to test group
+      copy:
+        src: files/test-custom.fact
+        dest: /etc/ansible/facts.d
+      when: inventory_hostname in groups['test']
+
+    - name: Pushing Custom File to dev group
+      copy:
+        src: files/dev-custom.fact
+        dest: /etc/ansible/facts.d
+      when: inventory_hostname in groups['dev']

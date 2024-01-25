@@ -1,0 +1,13 @@
+---
+- name: Gathering Ansible Facts
+  hosts: test
+  gather_facts: yes
+  tasks:
+    - name: Collect Only hardware facts
+      ansible.builtin.setup:
+        gather_subset:
+          - hardware                    # - !hardware   to ignore hardware facts
+      register: out
+
+    - debug:
+        var: out

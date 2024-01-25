@@ -1,0 +1,18 @@
+---
+- name: Gathering Ansible Facts
+  hosts: prod
+  gather_facts: yes
+  tasks:
+    #- debug:
+    #    var: ansible_facts.keys()
+
+    - name: Collect System Info
+      debug:
+        msg: |
+          "Name: {{ ansible_facts['hostname'] }}
+           FQDN: {{ ansible_facts['fqdn'] }}
+           IP: {{ ansible_facts['default_ipv4']['address'] }}
+           DISK_SIZE: {{ ansible_facts['devices']['nvme0n1']['partitions']['nvme0n1p1']['size'] }}
+           DNS: {{ ansible_facts['dns']['nameservers'] }}
+           Kernel: {{ ansible_facts['kernel'] }}"
+
