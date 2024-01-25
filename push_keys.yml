@@ -1,0 +1,15 @@
+---
+- name: generate SSH key
+  hosts: prod
+  become: false
+  tasks:
+    - name: Creating .ssh directory
+      file:
+        path: /home/ansible-user/.ssh
+        state: directory
+        mode: 0700
+    - name: Push keys to client machines
+      ansible.posix.authorized_key:
+        user: ansible-user
+        state: present
+        key: "{{ lookup('ansible.builtin.file', 'files/id_rsa.pub') }}"

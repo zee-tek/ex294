@@ -1,0 +1,24 @@
+---
+# when running playbook with ansible-navigator add --ee false
+# to run it on controler node instead of execution environment
+- name: generate SSH key
+  hosts: localhost
+  connection: local
+  become: false
+  vars:
+    ssh_key_filename: id_rsa
+    ssh_dir_path: "/home/ansible-user/.ssh"
+  tasks:
+    - name: Creating .ssh directory
+      file:
+        path: "{{ ssh_dir_path }}"
+        state: directory
+        mode: 0700
+    - name: Generating SSH Key "{{ ssh_key_filename }}"
+      ansible.builtin.user:
+        name: ansible-user
+        generate_ssh_key: yes
+        ssh_key_type: rsa
+        ssh_key_bits: 4096
+        ssh_key_file: "~/.ssh/{{ ssh_key_filename }}"
+        force: no
