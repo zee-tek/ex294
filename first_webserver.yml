@@ -1,0 +1,44 @@
+---
+- name: Configure WebServer
+  hosts: prod
+  become: yes
+  vars:
+    pkgs:
+      - httpd
+    srv: httpd
+    fire_srv: firewalld
+    rule:
+      - http
+      - https
+  tasks:
+    - name: Install WebServer Packages
+      dnf:
+        name: "{{ pkgs }}"
+        state: latest
+      notify: start httpd
+
+    - name: Configure Firewall Rules
+      firewalld:
+        service: "{{ item }}"
+        permanent: true
+        immediate: true
+        state: enabled
+      loop: "{{ rule }}"
+      notify: restart firewalld
+    - name: Copy index.html file
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+
+  handlers:
+    - name: start httpd
+      service:
+        name: "{{ srv }}"
+        state: started
+        enabled: yes
+
+
+    - name: restart firewalld
+      service:
+        name: "{{ fire_srv }}"
+        state: restarted
