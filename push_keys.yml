@@ -1,4 +1,5 @@
 ---
+#When running this playbook enable ask_pass and become_ask_pass in ansible.cfg file
 - name: generate SSH key
   hosts: prod
   become: false
