@@ -1,0 +1,10 @@
+---
+#When running this playbook enable ask_pass and become_ask_pass in ansible.cfg file
+- name: generate SSH key
+  hosts: prod
+  become: true
+  tasks:
+    - name: Creating .ssh directory
+      copy:
+        src: files/ansible-user
+        dest: /etc/sudoers.d
