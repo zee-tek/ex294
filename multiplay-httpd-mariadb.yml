@@ -1,0 +1,29 @@
+---
+- name: First Play
+  hosts: dev
+  become: yes
+  tasks:
+    - name: Install httpd
+      dnf:
+        name: httpd
+        state: latest
+
+    - name: start httpd service
+      service:
+        name: httpd
+        state: started
+        enabled: true
+
+- name: Second Play
+  hosts: test
+  become: yes
+  tasks:
+    - name: Install mariadb
+      dnf:
+        name: mariadb-server
+        state: latest
+
+    - name: Start mariadb-server service
+      service:
+        name: mariadb
+        state: started
