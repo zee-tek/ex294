@@ -42,3 +42,12 @@
       service:
         name: "{{ fire_srv }}"
         state: restarted
+
+- name: Test WebServer Connection
+  hosts: localhost
+  tasks:
+    - name: Connect to interanet web server
+      uri:
+        url: http://client1
+        return_content: yes
+        status_code: 200
