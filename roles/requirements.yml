@@ -1,0 +1,18 @@
+# from Ansible Galaxy, using the latest version
+- src: geerlingguy.redis
+
+# from Ansiible Galaxy, overriding the name and using a specific version
+- src: geerlingguy.redis
+  version: "1.5.0"
+  name: redist_prod
+
+# from any Git based repository, using HTTPS
+- src: https://github.com/geerlingguy/ansible-role-nginx.git
+  scm: git
+  version: master
+  name: nginx
+
+# from a role tar ball, given a URL;
+#  Supports 'htto', 'https', or 'file' protocols
+#- src: file:///opt/local/roles/myrole.tar
+#  name: myrole

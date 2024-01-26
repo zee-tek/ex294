@@ -1,0 +1,8 @@
+---
+- name: Play to Create files with different attributes
+  hosts: test
+  tasks:
+    - name: touch file
+      ansible.builtin.fetch:
+        src: "/home/{{ user }}/.ssh/id_rsa.pub"
+        dest: "files/keys/{{ user }}.pub"

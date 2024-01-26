@@ -1,0 +1,8 @@
+---
+- name: Test web service
+  hosts: localhost
+  tasks:
+    - name: connect to internet web server
+      ansible.builtin.uri:
+        url: "{{ url }}"
+        status_code: 200

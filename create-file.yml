@@ -1,0 +1,14 @@
+---
+- name: Play to Create files with different attributes
+  hosts: test
+  tasks:
+    - name: touch file
+      ansible.builtin.file:
+        path: /tmp/testfile
+        owner: ansible-user
+        group: ansible-user
+        mode: 0640
+        setype: samba_share_t
+        state: touch
+        force: yes  # By default this is 'yes', it ll overwrite file if exists but has different content
+                    # if set to 'no' it only copies the file if if does not exists already.

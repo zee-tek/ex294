@@ -1,0 +1,14 @@
+---
+- name: Using the file module to ensure SELinux file context 
+  hosts: test
+  become: yes
+  tasks:
+    - name: Selinux file context is set to defaults
+      ansible.builtin.file:
+        path: /home/ansible-user/user.txt
+        seuser: _default
+        serole: _default
+        setype: _default
+        selevel: _default
+        flat: no              #to ensure the default behavior of appending the hostname,path and file name
+                              #to the destination

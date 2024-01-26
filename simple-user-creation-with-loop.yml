@@ -1,0 +1,33 @@
+---
+- name: This Play will create multiple users with Loop
+  hosts: prod
+  become: yes
+  tasks:
+    - name: Create User and Add them Into groups
+      loop:
+        - name: john
+          groups: wheel
+        - name: ana
+          groups: root
+      user:
+        name: "{{ item['name'] }}"
+        state: present
+        group: "{{ item['groups'] }}"
+
+- name: Second Play will create multiple users with different Loop Style
+  hosts: prod
+  become: yes
+  vars:
+    users:
+      - name: toe
+        groups: wheel
+      - name: tan
+        groups: root
+  tasks:
+    - name: Create User and Add them Into groups
+      loop: "{{ users }}"
+      user:
+        name: "{{ item['name'] }}"
+        state: present
+        group: "{{ item['groups'] }}"
+

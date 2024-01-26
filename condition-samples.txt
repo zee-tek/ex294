@@ -1,0 +1,24 @@
+when: run_my_task | bool
+
+when: my_service is defined
+
+when: ansible_facts['distribution'] in supported_distros
+
+when: ansible_facts['distribution'] == "RedHat" or ansible_facts['distribution'] == "Fedora"
+
+when: ansible_facts['distribution_version'] == "9.0" and ansible_facts['kernel'] == "5.14.0-70.13.1.el9_0.x86_64"
+
+when:  #another way to define AND condition
+  - ansible_facts['distribution_version'] == "9.0"
+  - ansible_facts['kernel'] == "5.14.0-70.13.1.el9_0.x86_64"
+
+when: >
+  ( ansible_facts['distribution'] == "RedHat" and
+    ansible_facts['distribution_major_version'] == "9" )
+  or
+  ( ansible_facts['distribution'] == "Fedora" and
+  ansible_facts['distribution_major_version'] == "34" )
+
+
+
+ 

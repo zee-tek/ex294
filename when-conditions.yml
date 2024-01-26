@@ -1,0 +1,50 @@
+---
+- name: Checking Boolean When Condition
+  hosts: test
+  vars:
+    run_task: false    #Boolean
+  tasks:
+    - name: httpd package is installed, This ll run if boolean is True, otherwise skip
+      ansible.builtin.dnf:
+        name: httpd
+      when: run_task
+
+
+# By default when variable has false/true ansible treats it as Boolean
+# We can ensure variable value only accept boolean by following play
+
+
+- name: Ensure variable is Boolean Only
+  hosts: test
+  vars:
+    run_task: true    #Boolean
+  tasks:
+    - name: httpd package is installed, This ll run if boolean is True, otherwise skip
+      ansible.builtin.dnf:
+        name: httpd
+      when: run_task|bool
+
+
+- name: Ensure Variable is defined
+  hosts: test
+  vars:
+    my_srv: httpd
+  tasks:
+    - name: Only run if my_srv is defined"
+      ansible.builtin.dnf:
+        name: "{{ my_srv }}"
+      when: my_srv is defined
+
+- name: Use of "in" keyword 
+  hosts: test
+  gather_facts: yes
+  vars:
+    supported_distros:
+      - RedHat
+      - Fedora
+  tasks:
+    - name: Only run the task if item found in the supported_distros list
+      ansible.builtin.dnf:
+       name: httpd
+       state: absent 
+      when: ansible_facts['distribution'] in supported_distros

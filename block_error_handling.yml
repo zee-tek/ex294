@@ -1,0 +1,48 @@
+# Block help us to logically group tasks
+#
+- name: block example
+  hosts: all
+  tasks:
+    - name: installing and configuring DNF versionlock plugin
+      block:
+        - name: pacakge needed by dnf
+          ansible.builtin.dnf:
+            name: python3-dnf-plugin-versionlock
+            state: present
+
+        - name: lock version of tzdata
+          ansible.builtin.lineinfile:
+            dest: /etc/yum/pluginconf.d/versionlock.list
+            line: tzdata-2016j-1
+            state: present
+          when: ansible_distribution == "RedHat"
+
+
+# Blocks also allow for Error handling in combination with 'rescure' and 'always'
+# If any task in a block fails, then 'rescue' tasks are executed to recover
+# After the tasks in the block clause run, as well as the tasks in the rescue clause
+# if there was a failure, then tasks in the always clause run.
+#
+# block: Defines the main tasks to run
+# rescure: Defines the tasks to run if the tasks defined in the block clause fail
+# always: Defines the tasks that always run independently of the success or faulure
+# of tasks in the  block and rescure clauses.
+#
+#
+    - name: upgrade the database
+      block:
+        - name: upgrade the database
+          ansible.builtin.shell:
+            cmd: /usr/local/lib/upgrade-database
+      rescue:
+        - name: revert the database upgrade
+          ansible.builtin.shell:
+            cmd: /usr/local/lib/revert-database
+
+      always:
+        - name: always restart the database
+          ansible.builtin.service:
+            name: mariadb
+            state: restarted
+
+# Note: The when condition on a block clause also applies to its rescue and always clauses if present

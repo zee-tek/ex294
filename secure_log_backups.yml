@@ -1,0 +1,11 @@
+---
+- name: Create log file Backup
+  hosts: test
+  become: yes
+  tasks:
+    - name: Fetch the /var/log/secure log file from managed hosts
+      ansible.builtin.fetch:
+        src: /var/log/secure
+        dest: files/secure-backup
+        flat: no              #to ensure the default behavior of appending the hostname,path and file name
+                              #to the destination

@@ -1,0 +1,38 @@
+---
+#By default when any task in play fails ,play abort
+#To override this we can use ignore_errors: yes
+#
+#force_handlers:
+#  ansible check the exit status of all tasks before running handlers tasks
+#  if any task fails, handlers will not run
+#  To override this we can use force_handlers: yes
+
+
+#- name: Test Ignore Error
+#  hosts: test
+#  tasks:
+#    - name: Latest version of nopackage is isntalled
+#      ansible.builtin.dnf:
+#        name: nopackage
+#        state: latest
+#      ignore_errors: yes
+
+
+- name: Test force_handlers
+  hosts: test
+  force_handlers: yes
+  tasks:
+    - name: a task which always notifies its handler
+      ansible.builtin.command: echo Hello World
+      notify: restart the database
+
+    - name: a tasks which fails because the package doesn't exist
+      ansible.builtin.dnf:
+        name: nopackage
+        state: latest
+
+  handlers:
+    - name: restart the database
+      ansible.builtin.service:
+        name: mariadb
+        state: restarted

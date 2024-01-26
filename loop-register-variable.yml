@@ -1,0 +1,16 @@
+---
+- name: Excercise Loop and Register variable
+  hosts: test
+  tasks:
+    - name: Looping Echo Task
+      ansible.builtin.shell: "echo This is my item: {{ item }}"
+      loop:
+        - one
+        - two
+      register: echo_results
+
+    - name: Show Stdout from the Previous Task
+      ansible.builtin.debug:
+        msg: "STDOUT from previous task: {{ item['stdout'] }}"
+        #msg: "{{ echo_output }}"
+      loop: "{{ echo_results['results'] }}"

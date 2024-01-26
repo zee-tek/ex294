@@ -1,0 +1,8 @@
+---
+- name: use motd role playbook
+  hosts: client1
+  become: yes
+  gather_facts: yes
+  roles:
+    - role: motd
+      system_owner: user1@client1

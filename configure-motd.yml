@@ -1,0 +1,17 @@
+---
+- name: Configure SOE
+  hosts: prod
+  remote_user: ansible-user
+  become: true
+  gather_facts: yes
+  vars:
+    - system_owner: abc@example.com
+
+  tasks:
+    - name: Configure /etc/motd
+      ansible.builtin.template:
+        src: motd.j2
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: 0644
