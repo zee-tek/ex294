@@ -11,3 +11,5 @@ collections:
 
   - name: git+https://github.com/ansible-collections/community.general.git
     version: main
+
+  - name: redhat.rhel_system_roles

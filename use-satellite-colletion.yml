@@ -1,0 +1,21 @@
+---
+- name: Add the test organization to Red Hat Satellite
+  hosts: localhost
+  tasks:
+    - name: Ensure the organization exist
+      include_role:
+        name: redhat.satellite.organizations
+      vars:
+        satellite_server_url: https://sat.example.com
+        satellite_username: admin
+        satelite_password: Sup3r
+        satellite_organizations:
+          - name: test1
+            label: tst1
+            state: present
+            description: Test organization 1
+
+          - name: test2
+            label: tst2
+            state: present
+            description: Test organization 2

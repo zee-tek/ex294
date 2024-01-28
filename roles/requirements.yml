@@ -16,3 +16,7 @@
 #  Supports 'htto', 'https', or 'file' protocols
 #- src: file:///opt/local/roles/myrole.tar
 #  name: myrole
+- name: infra.apache
+  src: git@workstation.lab.example.com:infra/apache
+  scm: git
+  version: v1.4

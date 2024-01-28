@@ -1,0 +1,22 @@
+---
+- name: Simple Storage device
+  hosts: all
+  roles:
+    - name: redhat.rhel_system_roles.storage
+      storage_pools:
+        - name: vg01
+          type: lvm
+          disks:
+            - /dev/sdb
+
+          volumes:
+            - name: lvol01
+              size: 128m
+              mount_point: "/data"
+              fs_type: xfs
+              state: present
+            - name: lvol02
+              size: 256m
+              mount_point: "/backup"
+              fs_type: xfs
+              state: present

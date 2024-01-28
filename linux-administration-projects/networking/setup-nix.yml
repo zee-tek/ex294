@@ -1,0 +1,14 @@
+---
+- name: Configure Network
+  hosts: client1
+  become: yes
+  gather_facts: yes
+  vars:
+    network_connections:
+      - name: ens4
+        type: ethernet
+        ip:
+          address:
+            - 172.4.6.56/24
+  roles:
+    - redhat.rhel_system_roles.network

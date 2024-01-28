@@ -1,0 +1,12 @@
+---
+- name: Simple Storage device
+  hosts: all
+  roles:
+    - name: redhat.rhel_system_roles.storage
+      storage_volumes:
+        - name: extra
+          type: disk
+          disks:
+            - /dev/vdg
+          fs_type: xfs
+          mount_point: /opt/extra

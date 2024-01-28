@@ -1,0 +1,13 @@
+---
+- name: NFS Configuration
+  hosts: client1
+  tasks:
+    - name: Mount NFS Share
+      ansible.posix.mount:
+        path: /nfsshare
+        src: 172.26.250.101:/share
+        fstype: nfs
+        opts: defaults
+        dump: '0'
+        passno: '0'
+        state: mounted

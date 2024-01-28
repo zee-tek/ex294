@@ -1,0 +1,22 @@
+---
+- name: Setup HostName and Firewalld rule
+  hosts: client1
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: Change Hostname
+      ansible.builtin.hostname:
+        name: server1.example.com
+
+    - name: Enabling http rule
+      ansible.posix.firewalld:
+        service: http
+        permanent: yes
+        state: enabled
+
+    - name: Moving eth0 to external
+      ansible.posix.firewalld:
+        zone: external
+        interface: eth0
+        permanent: yes
+        state: enabled

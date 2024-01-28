@@ -1,0 +1,7 @@
+---
+- name: Play to reboot
+  hosts: client1
+  tasks:
+    - name: rebooting..
+      ansible.builtin.reboot:
+        reboot_timeout: 180         #default is 600

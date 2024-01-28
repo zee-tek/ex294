@@ -1,0 +1,12 @@
+---
+- name: Simple Storage device
+  hosts: all
+  roles:
+    - name: redhat.rhel_system_roles.storage
+      storage_pools:
+        - volumes:
+            - name: lvol01
+              size: 256m       #extending size from 128m to 256m
+              mount_point: "/data"
+              fs_type: xfs
+              state: present

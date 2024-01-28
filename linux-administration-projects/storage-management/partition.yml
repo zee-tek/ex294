@@ -1,0 +1,9 @@
+---
+- name: Partition Creation
+  hosts: client1
+  become: yes
+  tasks:
+    - name: Creating Partition
+      ansible.builtin.command:
+        cmd: parted --script mklabel gpt mkpart primary 1MiB 100%
+        creates: /dev/sda1

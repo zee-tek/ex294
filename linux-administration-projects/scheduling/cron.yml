@@ -1,0 +1,48 @@
+---
+- name: Scheduling Jobs with at and cron
+  hosts: client1
+  tasks:
+    - name: Remove tempuser
+      ansible.posix.at:
+        command: userdel -r tempuser
+        count: 20
+        units: minutes
+        unique: yes  # if matching job is already present new job is not added
+
+
+    - name: Schedule backups for my home directory
+      ansible.builtin.cron:
+        name: Backup my home directory
+        user: testing
+        job: /home/testing/bin/backup-home-dir #script-name
+        minute: 0
+        hour: 16
+        weekday: 5
+
+    - name: Schedule job to flush the Bolt cache
+      ansible.builtin.cron:
+        name: Flush Bolt cache
+        cron_file: flush_bolt
+        user: "root"
+        minute: 45
+        hour: 11
+        job: "php ./app/nut cache:clear"
+
+    - name: Crontab file exists
+      ansible.builtin.cron:
+        name: Add date and time to a file
+        job: date >> /home/devops/my_date_time_cron_job
+        minute: "*/2"
+        hour: 9-16
+        weekday: 1-5
+        user: devops
+        cron_file: add-date-time
+        state: present
+
+    - name: Schedule at task
+      ansible.posix.at:
+        command: date > ~/my_at_date_time
+        count: 1
+        units: minutes
+        unique: yes
+        state: present

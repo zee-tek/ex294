@@ -1,0 +1,17 @@
+---
+- name: Scheduling Jobs with at and cron
+  hosts: client1
+  vars:
+    systemd_target: "multi-user.target"
+  tasks:
+    - name: Get current systemd target
+      ansible.builtin.command:
+        cmd: systemctl get-default
+      changed_when: false
+      register: target
+
+    - name: Set default systemd target
+      ansible.builtin.command:
+        cmd: systemctl set-default {{ systemd_target }}
+      when: systemd_target not in target['stdout']
+      become: true

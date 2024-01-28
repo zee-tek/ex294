@@ -1,0 +1,16 @@
+---
+- name: Simple Storage device
+  hosts: all
+  roles:
+    - name: redhat.rhel_system_roles.storage
+      storage_pools:
+        - name: vgswap
+          type: lvm
+          disks:
+            - /dev/sdb
+
+          volumes:
+            - name: lvswap
+              size: 512m
+              fs_type: swap
+              state: present
