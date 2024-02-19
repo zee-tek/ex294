@@ -1,0 +1,90 @@
+---
+#
+# Install the OpenAFS server with RPM package files. The package
+# files are transferred from the controller to a temporary directory
+# on the remote node and then installed.
+#
+- name: Verify the path to the installation tarball is specified
+  assert:
+    that:
+      - afs_install_archive is defined
+      - afs_install_archive != ''
+
+- name: Ensure tar is installed
+  become: yes
+  community.general.zypper:
+    state: present
+    name:
+      - tar
+      - gzip
+      - bzip2
+
+- debug:
+    msg: "Installing {{ afs_install_archive }}"
+
+- name: Create directory
+  file:
+    state: directory
+    path: "{{ afs_tmpdir }}/install"
+
+- name: Upload package files
+  unarchive:
+    src: "{{ afs_install_archive }}"
+    dest: "{{ afs_tmpdir }}/install/"
+
+- name: Find server package filenames
+  find:
+    path: "{{ afs_tmpdir }}/install/"
+    file_type: file
+    recurse: yes
+    use_regex: yes
+    patterns:
+      - "openafs-v?[0-9].*[.]rpm$"
+      - "openafs-server-.*[.]rpm$"
+    exclude: ".*[.]src[.]rpm$"
+  register: find_packages
+
+- set_fact:
+    server_packages: "{{ find_packages.files | map(attribute='path') | list }}"
+
+- name: Verify the package files are present
+  assert:
+    that:
+      - server_packages | select('search', '.*/openafs-v?[0-9][^/]*[.]rpm$') | list | count == 1
+      - server_packages | select('search', '.*/openafs-server-v?[0-9][^/]*[.]rpm$') | list | count == 1
+
+- name: Install OpenAFS server packages
+  become: yes
+  community.general.zypper:
+    state: present
+    disable_gpg_check: yes
+    name: "{{ server_packages }}"
+
+- name: Get installation paths
+  openafs_contrib.openafs.openafs_get_install_paths:
+  register: install_results
+
+- name: Store installation facts
+  become: yes
+  openafs_contrib.openafs.openafs_store_facts:
+    state: update
+    facts:
+      install_method: "{{ afs_install_method }}"
+      server_installed: yes
+      server_service_name: openafs-server
+      bins: "{{ install_results.bins }}"
+      dirs: "{{ install_results.dirs }}"
+  when: not ansible_check_mode
+
+# /etc/sysconfig/openafs-server in opensuse package is empty
+- name: Set bosserver startup options
+  become: yes
+  copy:
+    content: |
+        BOSSERVER_ARGS="{{ afs_bosserver_opts }}"
+    dest: "/etc/sysconfig/{{ ansible_local.openafs.server_service_name }}"
+    mode: 0644
+    owner: root
+    group: "{{ afs_root_group }}"
+  notify:
+    - "server configuration changed"

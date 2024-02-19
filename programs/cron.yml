@@ -1,0 +1,16 @@
+---
+- name: add cron job
+  hosts: dev
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: cron job
+      cron:
+        name: add-line
+        weekday: "*"
+        minute: "*/1"
+        hour: "*"
+        user: ansible-user
+        job: "echo this is new line>>/tmp/cron-test"
+        cron_file: add-line
+ 

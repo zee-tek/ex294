@@ -1,0 +1,19 @@
+# {{ ansible_managed }}
+
+[kdcdefaults]
+    kdc_ports = 750,88
+
+[realms]
+    {{ afs_realm }} = {
+        database_name = {{ afs_krbserver_principal }}
+        acl_file = {{ afs_krbserver_kadm5_acl }}
+        key_stash_file = {{ afs_krbserver_stash }}
+{% if afs_krbserver_dict is defined %}
+        dict_file = {{ afs_krbserver_dict }}
+{% endif %}
+        kdc_ports = 750,88
+        max_life = {{ afs_krb_max_life }}
+        max_renewable_life = {{ afs_krb_max_renewable_life }}
+        supported_enctypes = {{ afs_krb_supported_enctypes | join(' ') }}
+        default_principal_flags = {{ afs_krb_default_principal_flags }}
+    }

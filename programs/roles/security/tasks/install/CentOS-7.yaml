@@ -1,0 +1,37 @@
+---
+- name: "CentOS-7: Add EPEL repository"
+  become: yes
+  yum:
+    state: present
+    name: epel-release
+    update_cache: yes
+  tags: root
+
+- name: "CentOS-7: Install development packages"
+  become: yes
+  yum:
+    state: present
+    name:
+      - autoconf
+      - automake
+      - bison
+      - flex
+      - fuse-devel
+      - gcc
+      - git
+      - glibc-devel
+      - jansson-devel
+      - krb5-devel
+      - libevent-devel
+      - libtool
+      - make
+      - ncurses-devel
+      - openssl-devel
+      - pam-devel
+      - perl-devel
+      - perl-ExtUtils-Embed
+      - redhat-rpm-config
+      - rpm-build
+      - swig
+      - wget
+  tags: root

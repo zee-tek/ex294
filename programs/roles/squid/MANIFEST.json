@@ -1,0 +1,33 @@
+{
+ "collection_info": {
+  "namespace": "mafalb",
+  "name": "squid",
+  "version": "0.2.0",
+  "authors": [
+   "Markus Falb <markus.falb@mafalb.at>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "squid",
+   "proxy"
+  ],
+  "description": "Ansible collection for squid",
+  "license": [
+   "GPL-3.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/mafalb/ansible-collection-squid",
+  "documentation": "https://github.com/mafalb/ansible-collection-squid",
+  "homepage": "https://github.com/mafalb/ansible-collection-squid",
+  "issues": "https://github.com/mafalb/ansible-collection-squid/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "e111afb3f87126670535cd66e9de6c236159b49eef05cd65a958c98a0f0a4f16",
+  "format": 1
+ },
+ "format": 1
+}

@@ -1,0 +1,31 @@
+---
+- name: Install Setools
+  become: yes
+  yum:
+    name: "{{ afs_selinux_tools }}"
+    state: present
+  when: afs_selinux_tools is defined
+
+- name: Create directory for SELinux module definitions
+  become: yes
+  file:
+    state: directory
+    path: /var/lib/ansible-openafs/selinux
+    mode: "0755"
+    owner: root
+    group: "{{ afs_root_group }}"
+
+- name: Copy the SELinux module definitions for openafs server
+  become: yes
+  template:
+    dest: "/var/lib/ansible-openafs/selinux/{{ item }}"
+    src: "{{ role_path }}/templates/{{ item }}.j2"
+  with_items:
+    - openafs.te
+    - openafs.fc
+
+- name: Build SELinux module for openafs server
+  become: yes
+  openafs_contrib.openafs.openafs_selinux_module:
+    name: openafs
+    path: /var/lib/ansible-openafs/selinux

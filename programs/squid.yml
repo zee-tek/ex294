@@ -1,0 +1,16 @@
+---
+- name: setup squid
+  hosts: test
+  gather_facts: true
+  become: yes
+  roles:
+  - role: squid
+    squid_cfg:
+      acl:
+        myhosts:
+        - src "127.0.0.1"
+        - src "192.168.26.129"
+  #    http_access:
+   #   - allow myhosts
+   #   - deny all
+

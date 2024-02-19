@@ -1,0 +1,2077 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".DS_Store",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7dc68790ddaa2940db8ce1fdf579c50869d4a7fe91b094ebca4f1c5b5ae48fb8",
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c134a036f36238d0a5759480ba7b06f6f40cc193f5b1058b74a4daa60f443807",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e910f101b8e93c473e6d6b31df6379dd00f22c0c672ddb881c59834939287c3a",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "854081319843a15a95afeee3d0d6f5a17bd7f57ec0ad89e6c96e1481d4e8f64a",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d479faa78e7f809db8562cbb714fb2a6cf0c1f15d5fdb6173428a69efc6707f",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/redhat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "32886bdc14de0c4fb06e5830451574aa9efdd5c261ac80f0a8f7472ed583ddf3",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/custom_user_overrides.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "809c426e4cbd0ae7ffd0b89f03753a19ac4e73bb818552e0e9a734d406f0bd79",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "02f8501a4be6ac2c5a97cc1e28e2da843a9b1a622e952453007f03b4a38478c2",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/tls_cert_parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "357341fd597f345932530170a615554eec5d532c8a58a067307ba30f5e7d637e",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/main",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/main/01_maps_os_supported.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee00f52f608e46874fca4d33a9508df00e3aaf780e92693533e4a18318613946",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/vars/main/02_map_os_transition.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1096ead5a9b47a5c181b3c56d8c3f24da148848d0661bb8bd339d1ae4e0990fa",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/redhat.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e361de861bd4ef3a96d9752a2750c0600a3c7117d98714f7d86f392cda158dfb",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/custom_user_linux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8f55915be4d85d26fd1cc5ec14147df4af8e21001d86e12e2d49f8ae9e1b7d6d",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/verify.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92ed081c0df82997e3c0b22dd32c2457939612a655bdacf15e7e71416df80566",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/custom_user_clean_linux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e6e6d9ed62a2a5328fbe531986649a033bec737a7d04481dfcfbe554ee35e86",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/debian.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efaa4819f9021242eec34239819ff07ece1c26b165e2df748990171b9c5038a5",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07e09101a9a7e6d3c8dea3dc0a618d1d7b3a19dc946ec2330bba4b356eb6a807",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/iptables.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1dc5ecf3519149b99ae7a6b154b8a6bba10ab7a5599bb954e7fd92b40ac5fcce",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/agent2_plugin_settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1f205220e15f5f00e6d1dc22806618f5b270a3846b6f5c2863d4fb6b920a740",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/remove_packages_linux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca7a14dd83cbaf88bc5435d665b109261ce89a722088887dafc2abbeb2ac2431",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/init.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c42063d3c27a231d94624330151be44d35c5eec202241957933286759f8030a",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/firewalld.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "481591f9ce33fe05368018c9eaf8465c9d4c0530c2c4084541d3b59a5837c118",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "21b58088f49ce5a32cdd7ca9212af3061e147a194a979594a98a80aca92a81c4",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/tasks/host.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b23e96d66cea4370092fa4c192d49e350594acd7734f546673d26b5a72699a2b",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c134a036f36238d0a5759480ba7b06f6f40cc193f5b1058b74a4daa60f443807",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93221c5cce654145b8723f15e5a5114adc222aefb7bd39f56c30521b4f45f9dc",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63496540c6c829df523e4b16f61563af706d4f9b0cd0376a0d394e8517cffdcf",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/13_source_files.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43d1120e0139624de4b848785ee76219fed2c42663f646fe3d23d3fb26b10738",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/14_firewall.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c96e04fcc925c91154e379aac5b0f2891b078c4b1076a0d943579fa5e8403f6b",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/15_repository.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95c0625982f25408406f6714e426d875080f6ffa9252b2cf0a087b20bb2f68f8",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/99_test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d2bdb6193d8f77c724f8243f577b444ad24f5bb97ee367b94b818b9f8f25fef5",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/12_agent_conf_parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2153ed1553c730794c91c1da1270a81a787f44c3b2ecbfd58655cfb20b5fbdf1",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/16_selinux.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0eb4c9e5e804f75e1b836666f8e876fe9d0cce8118e599574a701b218ffe2e50",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/10_agent_version.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f6b7698b804f03bcf4c6a3438cb51e93f27f85820f08197d9ec5cde09c1cb185",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/11_agent_settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50a57f5cccaa1c45f80ed3fc9fb36468bbd593b6cdf0ca3715a8ae03b6e07458",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/00_maps",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/00_maps/09_maps_release_versions_deprecated.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "29ae453689b2fc3a66132ebd136d2e067f5ca40badaa12343f566bab1c5b7b52",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/00_maps/00_maps_agent_settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b85d6aa6c380e5dfc0b853b709b5f0961ef69b929473cae122e8741b843d23ec",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/defaults/main/00_maps/03_maps_conf_parameters.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fc61acc8707f167ce89adde818167aa0d28ed82dc0d535caf985fe21c629b8c9",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_modbus.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af4d7d74de379e60ab963c8faa7edf5975b16b6d77d01480f3d571d377dfc016",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_mongodb.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "89626c3497eb1798fa74b87f02d9837705fc0291ee93f82e02e075c6497f95f6",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent1_6.4.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e643b52b27bcf94ebeb040e73abace478855206f08f61a4e0fe6152a540f32ac",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/psk_value.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0bcca6f2c5db060dc6ae47dd65410019f3c2fd9ea2cdcca383ddf6318ea8924a",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent2_6.4.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bcb45123c635bd487b2d32641adf351852f26c39e1106427281c24f1e26a86d",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_smart.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e534d54c6428b8741515924f7a80f3eb823a3483d0cc3717f0154b149b1a859",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_redis.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "135432e2a4dbc2f07da61a4bb36e20fc8f39c515e2abd0a58743708c5707612f",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_oracle.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d319571204808d7987a175bf50c4c2374760968ebaa26fe5aabbfa67556f7f0b",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_docker.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e2f3eb7fbeeb34d4dc66e5b17aa9a66483d6adfaa387aa23e99cb04e80bf8b0",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent2_6.0.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7c04940cf7dd4625f0d4cadcef0acabb0e17f6ff773f95bc2e9c2d80a6375b7",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_postgresql.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bae7460f586bd4a61e8ef0e1596e584fa6c0a3b010e1bb1e2a7a0ff48d5109a6",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent.aliases.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e5e24020a8264aa5b919688844b2d09ced9ffefdd1442fcd6d509c214085b5c",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_memcached.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d7413461275416f9eed07fe1c9fc98a383550d870a13c0580cef2db91c6b38c",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_ceph.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e736ed6a7b3169ea96468a77e98c93fb5f8a59b05f6e3e2d2209c2af5a3c28e7",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_mysql.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "844d4d9d54f8bddbdf5cf597ac431827cfee14ba08e55e4e12b05503de052bf5",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent.logrotate.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fc496143ed7019f13109699d8e6907beb946627eb3f6f3b8479d918bf7fcc215",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent_extend.cil.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cab8aaca880b518d399388d3f2f883164d7b025b077416ec4d1be5395ffdb69",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/a2_plugin_mqtt.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d297c4a9fe7d6fabc0912cc1ad50e394a88c32d16c369e4c54daff95f6571ff2",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent1_6.0.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4c1a84b58bf565bd3e3b85b826a53415aa76eaee24b53b3264c1994d80e1fe5",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/templates/zabbix_agent.userparameters.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a87e2f5ce44e18c9a256d761f2c69bb358be247763f4cd43524239d91a7485a",
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/zabbix_agent/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f0120e27bd3a09d25e2fc6b237d4919d95668909e094e200487388135edfa21a",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24bb53788d167faec2e7d7d3890fa1b0a76f9f925d662913576915cb738a99e3",
+   "format": 1
+  },
+  {
+   "name": ".ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1f71e2272b8063ebc9c859d7faee70e56bc76a405e5b9e28f84ccdf7020b59d",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "10ae1bc7adab04b7442c611f5e8c043259ae79743b6e3a3528d46815055a95f3",
+   "format": 1
+  },
+  {
+   "name": "requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9617b56dfdd0c9fd62700f2eff03c4afef8d5e3fc41984ec6284579c452bf8f4",
+   "format": 1
+  },
+  {
+   "name": "molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/verify.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25ed37057a45ae3d8cf297fabd6a1a0173d41edd8e79e433cb64876ee540a078",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5116159bfa0af0ba718ecbeecfc954a60b963e1f6aa7803074db0e5913dc0830",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd1eeb24bbb21e369564a4dd9c90878601e6224d140fbdb8430a0a9b1e800965",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "252d2a3e8ac1fc6d4437b7bcef65b251d6c304fa66bff74ed03b33b3c1ab104e",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert_selfmanaged/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "31308fe26675bc0a44c49ef2820befeaa6828bc939904586726140f145b9a802",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "348b345a116b67097afbab77f9ead42a305fb0f5e9967d1c99fa085f58a152b3",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e973471ad4d903aeda7d3ec1a3471c274d491ef06a49e22d471dd9d5529b75cc",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_cert/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/side_effect.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a7f8371fe88669d960f67878a93df09c3d811350f55f1bd3d0b258e85eef61e",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "85214b40a3fb26190409bc50e0bf8e0179379411962508ca0d83cb4c2b18fbe5",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_minor/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25a8e8a06cb6382d58607b68f7c4e739a704c8a479db956f5bea8ca90af6d411",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/verify.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cefd6eae46416f9da5569804621e7542c46e7f5c2b5f9425b9bf8af5a3a1b8ef",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3851d414095988eae16fd7487569ed2c4d24829211e33c979a971519b06722c0",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/play_reload.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "867a0a18e61137b1c9256c9249aeb1ef17c501c1393e56a3fdd081096edc3c43",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/TEST",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/side_effect_certsgen.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65e5c8bebed17a6e0bce97273471fd0bda985495b676f300f48322fce624ac37",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6081b72ff03c46e191faea23fbda8f7709be3c7c12f40efac22fb72c4c159b28",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/tasty.inv.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "748e7f69c7af031826add533c12bf569dc0736a970be9acbf33c502292548fc0",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15850a5338a3db2b83693303f0c72157738d58f823dbb8498a57ef864f48b4df",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_centos7.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9948554489fba827824d13d3c773647e1027391e673f805b11ac52890b31c764",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_rocky9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69c2da27fdcc810e47c57d9cf0dc110b85bbcc0a245bfaf4b005f330dbab8657",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_rocky8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b46ac5e099f214020fa4c6ebb497c679111205abbc3d1f58f3ae5d0a8dc281c6",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_fedora33.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cbd0f52e7c694ba6b312904cb9122ec9f81837c26977abd56d83c3cea544ef59",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_alma8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a43ba3553334365da4ea3af03038fab634b2b9b775623ebfb8e4be59a4ac4c1",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_alma9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f5a86d4d99a61fb21fc9e606bfa6ce3332294aaa1669c71b864d529adcf8b1bd",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_fedora37.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cca326653d8b9fda2657a6c3b782c09e539eb9799e885d50c4334b95b6f5ff7a",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_debian10.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6aef21cea676a5d95890fe443a606132059fcb1b6b7a507bd6f079f40e48d047",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_rhel9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c03c02f8646a9609ec7b2fa05a4c1ac6f32a2fd7354a0e24b4d9320933422547",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_rhel8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b11b51e0010bededdd82a03ed3d22046fc005444a80685181dd5746777bc5ae",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_debian11.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a66477b778708507952fae529cb5d96fff1f9f253573b9391db7eaa89d7ec4fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_ora8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0b3354352dec20c3c95abadd3e8d37c73ee366698672c20dc74c0ec87074436",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_ora9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ccafd366c36194382cc1fce9ffcac336e16e15543665fbd9e81640ebb0969a9",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_ubuntu18.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c60dc0b9e2599bde37c8b261595b9d4cff833b951ab0598cccc5f840f9acc2f3",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_amazon2023.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05ede9d9dea4aead47d04d3c61bf5c03c42130544593b0e9c84240484f1dfb89",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_ubuntu20.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "938d239b33bae45aa47a40733a27ca68cf656879bddc2ff75a0e89a841740dbc",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_ubuntu22.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c093f221c3cf10874be44cbc83ab57ba14c90e2ebfdd58b7c4e0797e78655909",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_cs8.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74b603c181e16762f2f99e16e8b06fdbdec4e1633c9d673100e3fb8a53f20786",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/inventory/host_vars/podman_cs9.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e7c4321040677c94b1a8ef671b1ba84999372ad6982dc529a20b0a7463785df",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/play_agent2pluginswithtlsfiles.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e30cc956fdda4d94b6ed29ff8c72d6245e7676fba892e954271036cb93cdd18a",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/.PSK",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/.PSK/ZABBIX_AGENTD",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/.PSK/ZABBIX_AGENT2",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/Dockerfile_rhel.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "458838f15956264635fd1db4d8b184a857d6e4cdcc5c094cb2a62e39cf75100b",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/certs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/Dockerfile_debian.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f83e0773f1bfe6afc364bd2a31693b6e8e5e0a4203715f873960c169cfe1e8a",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.connections.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "134272101918de901daba0c388cde294d42f2292a57b38f1806350f74c229629",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.transactions.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87f897682937dbbe96b8bc314933438e7671ecdee4e7bca837f38e87bc7e3d30",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.scans.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3632beaf5a9f2be82e3eb07740f37b2eaac220638d1dabd25770fee1d927c396",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.bgwriter.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80d6ee1e37a45b255c7a68d1a784607439e2153eb6bc294e47d9857a2fb765ea",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.discovery.db.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c23515e35177671740d5dfd2a5f7ea6eca9d2d07d0a9c86381047b1229bc51c8",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.uptime.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8b260576a5a621b11a0246283913c6a36d97a0916b123db9e3bcb9d7439ffd1",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.replication.lag.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2ddb69a21f2d071cc40a54ca123e4ad7ac4f20100bf1ac551b88b80340b2249",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.connections.prepared.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "634ec4be002736f16709b542b894509ea31616811dd938afba48c0890b3af16f",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.ping.time.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0dd2c6cfd7c352abeb09443a4ddc4bb4e147e1d7bc04c0f3bfb63e1e3e4d47c4",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.frozenxid.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "972fa1c37df1c3675f4407d22d09834d19e95c274451d4ff54a69e242b4e29b8",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.wal.stat.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "20a9dabebc54734f36ad25f26f5b2745b4067c2ff615bd58f3916d195a2edaa1",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.cache.hit.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f7cac8cd86f0ceb4c9b5aeb165c4070bfe6a1c1dee79aad44a019ae188fd597",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.connections.sum.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "02e38f1a58a92bc35c9d95bd0d7e5d567e31f34a911f2d17fc03bf2101095dfa",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.dbstat.sum.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79a69dbb00994738b30ee6b88a3bc5400e9e86e932ac66a57cfccd62eec2916a",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.locks.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f025c1f67bdb21988626a6a0fdc0f467d1c36e479bdaa87ac581e85ac4d3268",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.replication.recovery_role.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab3a3d568c19705827fded6d7637547ecc5e9acff0133817297458db015ca134",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.query.time.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "738454c23803c7bae2cd095c79fa13519ca4573711c6efa41d7be06fd882c1e9",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.config.hash.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "45b05cd46796dd7953039bab14067481f0ef4dddfb7cb4648647015e503ef3cf",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.replication.status.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "550a6f20c80df025254bf6615b10d18796a9122c8476e2edc7cda3a3cc9775fc",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/postgresql/pgsql.dbstat.sql",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "470530c58f4e3920dccdfd572abeb97eaaa51bb54df3dda4cb3927bb7c00f408",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/scripts/test.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f36c2dff63fb14429dcce51c7be5275e460c3a5071d707b18bf3a48b9e0fda73",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/certsgen.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e851c6578df92f5f46d6b7bd73463396e2520948d28ffdd739c3ea905f88e3c",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/conf.d",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/conf.d/test.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aacaf77620c69ca721105291d205833fbf741b68d08b4ca09fdb4bc28729703e",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/squid.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d92c3ae0310089214357d403c6a7aca9c574b9cdfc299baac1d950ffcf1d4b4",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/files/modules/module.so.test",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/prepare.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1801d51c3995384eacfa6c76612ad1838e83363dfa584bf4a2e08999acaeb541",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/converge_latest.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8da226856b382929af4507d5818e41609ec98c34563fda99355e9601c4712b4a",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/README.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d64a1b1db72b0c73c4e3eb41cd25db1b28b0ad5f71fe36b872226e2d91f41337",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/converge_examples.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "080bd9b100aa52936842d5f3433c2a4851a6b8c827b4aaf8cae7719c87a70301",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/play_se.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "40766bf9ac1929b1979de5f6d69251b3370a46771f19a495d225aff49d2661df",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/converge_12tests.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03d1680729fb2289414c779d149a7ddbda3418d953ea0728c97b0c4d6dd8297f",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f76b04b5f5a4f33d9cc2da6cfa8d92b069e271c275851596f4026fefa756306",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_customuser_psk/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "348b345a116b67097afbab77f9ead42a305fb0f5e9967d1c99fa085f58a152b3",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78bd3d97a1a783284bd0d479bce2212014aa3ad731475f8bddf3654dd97e7335",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_cert/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "738dfdd08963fb2fec34963d1c788890e36872d9d80266230c5e8d72db357cbf",
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/6.4_agent2/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/side_effect.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d4559f7add5f0d3ad4b3dc162978a41a5faee75db404f7e6ffff030bb58f2c9",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "942faf9d20db66d88828df2b47c00c27376991f67eba59698844310056051d0e",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_minor/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5473c424d8fe671be8e0e5306610912195d539263e14ca10780c756be2d6a7cb",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_psk/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3d524dbb459dc6c4dcf46ef27be8c65e1e8fb887cbc88e9fbfee5e911bc11da6",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_psk/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "348b345a116b67097afbab77f9ead42a305fb0f5e9967d1c99fa085f58a152b3",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8dc4388fc6ca5e24ebc0c8ed2587ed203e525a10c5d07e054c895a1a98d913f6",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2_cert/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab3edfedfa6c788f6a394b105564893de1dddc3f50f3c3bce216cb74eda4f6fe",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ba889e7c9e01b9fc84ae5a2f2f8028449c3ec03b634b411c762d2c6484d77045",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_cert/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1ae9c2b7ea7fbbdb101c33b5e04141cbf4cb1702b8de7ce34b1fdbc6ff6d441",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agent2/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8d37974531e481c4a617a106fcfc206e7caf6a3ddb0085b6acb575e97021fa",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/inventory/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/inventory/group_vars/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbbb9e5af928c8ee3218df94a9837d44fa1d8ef39899de49730b8e90bf53c759",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/inventory/group_vars/podman.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52a5333cf8baa4e53f01dbb52837bc358869ffc7b60fe14f62d25cde6f9ea197",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/inventory/group_vars/all.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664b197e69d630fd8320cd1780b67081b478b08cd6c7823e822856ab03bc2acf",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/inventory/group_vars/vm.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ff1793054a26694352ebd36de6da01fb4772dd9088c73f15419c36f5d8cc9ce",
+   "format": 1
+  },
+  {
+   "name": "molecule/agentd_customuser_psk/ansible.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2566562aa382cfb458f6f215bd00ca3e6776b7ad153b2e56746eed7fc676bfa2",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

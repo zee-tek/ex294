@@ -1,0 +1,22 @@
+---
+- name: Setup systemd client service
+  become: yes
+  block:
+    - name: Install systemd client service unit file.
+      template:
+        src: openafs-client.service.j2
+        dest: "/etc/systemd/system/openafs-client.service"
+      register: unit_file
+
+    - name: Reload systemd.
+      systemd:
+        daemon_reload: yes
+      when: unit_file.changed
+
+- name: Store installation facts
+  become: yes
+  openafs_contrib.openafs.openafs_store_facts:
+    state: update
+    facts:
+      client_service_name: openafs-client
+  when: not ansible_check_mode

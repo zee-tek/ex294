@@ -1,0 +1,4 @@
+>{{ afs_csdb.cell }}    #{{ afs_csdb.desc }}
+{% for host in afs_csdb.hosts %}
+{{ host.ip }}    #{{ host.name }}
+{% endfor %}

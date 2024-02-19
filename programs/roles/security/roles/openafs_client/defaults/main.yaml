@@ -1,0 +1,26 @@
+---
+# afs kernel module name; openafs or libafs
+afs_module: openafs
+
+# Specifies DKMS or kmod installation on RPM-based systems.
+afs_module_install_method: "{{ _afs_module_install_method | default('dkms') }}"
+
+# Optionally, preload the kernel module before starting the client service.
+afs_module_enable_preload: no
+
+# afs mountpoint
+afs_mountpoint: "{{ ansible_local.openafs.cacheinfo.mountpoint | d('/afs') }}"
+afs_cachedir: "{{ ansible_local.openafs.cacheinfo.cachedir | d('/usr/vice/cache') }}"
+afs_cachesize: "{{ ansible_local.openafs.cacheinfo.cachesize | d(50000) }}"
+
+# Set afs_afsd_opts to override the afsd command line options provided by the
+# client packages or the defaults when installing from source.
+#afs_afsd_opts: <auto-detected>
+
+# Paths
+afs_afsd: "{{ ansible_local.openafs.bins['afsd'] }}"
+afs_fs: "{{ ansible_local.openafs.bins['fs'] }}"
+afs_vos: "{{ ansible_local.openafs.bins['vos'] }}"
+
+# Directories
+afs_viceetcdir: "{{ ansible_local.openafs.dirs['viceetcdir'] }}"

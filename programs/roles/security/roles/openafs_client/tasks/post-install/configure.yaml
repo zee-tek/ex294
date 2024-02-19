@@ -1,0 +1,130 @@
+---
+#
+# Update the client configuration files.
+#
+#   - cacheinfo
+#   - ThisCell
+#   - CellServDB.local
+#   - CellServDB.dist
+#   - CellServDB   (combination of CellServDB.local and CellServDB.dist)
+#   - NetInfo
+#   - NetRestrict
+#
+# The CellServDB.dist file may have already been provided by the installation. A
+# custom file may be provided by defining afs_cellservdb_dist, which should contain
+# the path on the controller.  An empty CellServDB.dist file is created if
+# one is not present on the remote node.
+#
+# The CellServerDB.dist and CellServer.local files are combined into the CellServDB
+# file. The CellServDB.dist and CellServDB.local are placed into the <viceetcdir>
+# since that is where the packaged init scripts expect them, but copies are also
+# placed in a separate directory for ansible assemble.
+#
+
+- name: Create configuration files
+  become: yes
+  template:
+    src: "{{ role_path }}/templates/{{ item }}.j2"
+    dest: "{{ afs_viceetcdir }}/{{ item }}"
+    owner: root
+    group: "{{ afs_root_group }}"
+    mode: 0644
+  loop:
+    - ThisCell
+    - CellServDB.local
+    - cacheinfo
+
+- name: Update CellServDB.dist
+  become: yes
+  block:
+    - name: Customize CellServDB.dist
+      copy:
+        src: "{{ afs_cellservdb_dist }}"
+        dest: "{{ afs_viceetcdir }}/CellServDB.dist"
+        owner: root
+        group: "{{ afs_root_group }}"
+        mode: 0644
+      when: afs_cellservdb_dist is defined
+
+    - name: Ensure CellServDB.dist exists
+      become: yes
+      file:
+        state: touch
+        path: "{{ afs_viceetcdir }}/CellServDB.dist"
+        owner: root
+        group: "{{ afs_root_group }}"
+        mode: 0644
+        modification_time: preserve
+        access_time: preserve
+      when: afs_cellservdb_dist is undefined
+
+- name: Create CellServDB
+  become: yes
+  block:
+    - name: Check CellServDB file
+      stat:
+        path: "{{ afs_viceetcdir }}/CellServDB"
+      register: csdb_stat
+
+    - name: Ensure CellServDB is not a symlink
+      file:
+        state: absent
+        path: "{{ afs_viceetcdir }}/CellServDB"
+      when: csdb_stat.stat.islnk | d(False)
+
+    - name: Copy CellServDB parts for assembly
+      copy:
+        remote_src: yes
+        src: "{{ afs_viceetcdir }}/{{ item.1 }}"
+        dest: "{{ afs_viceetcdir }}/CellServDB.d/{{ item.0 }}-{{ item.1 }}"
+      with_indexed_items:
+        - CellServDB.local
+        - CellServDB.dist
+
+    - name: Assemble CellServDB
+      assemble:
+        src: "{{ afs_viceetcdir }}/CellServDB.d"
+        dest: "{{ afs_viceetcdir }}/CellServDB"
+        owner: root
+        group: "{{ afs_root_group }}"
+        mode: 0644
+
+- name: Remove NetInfo
+  become: yes
+  file:
+    state: absent
+    path: "{{ afs_viceetcdir }}/NetInfo"
+  when:
+    - (afs_client_netinfo is undefined) or (afs_client_netinfo | count == 0)
+
+- name: Update NetInfo
+  become: yes
+  template:
+    src: "{{ role_path }}/templates/NetInfo.j2"
+    dest: "{{ afs_viceetcdir }}/NetInfo"
+    owner: root
+    group: "{{ afs_root_group }}"
+    mode: "644"
+  when:
+    - afs_client_netinfo is defined
+    - afs_client_netinfo | count > 0
+
+- name: Remove NetRestrict
+  become: yes
+  file:
+    state: absent
+    path: "{{ afs_viceetcdir }}/NetRestrict"
+  when:
+    - (afs_client_netrestrict is undefined) or (afs_client_netrestrict | count == 0)
+
+- name: Update NetRestrict
+  become: yes
+  template:
+    src: "{{ role_path }}/templates/NetRestrict.j2"
+    dest: "{{ afs_viceetcdir }}/NetRestrict"
+    owner: root
+    group: "{{ afs_root_group }}"
+    mode: "644"
+  when:
+    - afs_client_netrestrict is defined
+    - afs_client_netrestrict | count > 0

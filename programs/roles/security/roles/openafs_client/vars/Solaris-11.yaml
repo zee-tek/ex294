@@ -1,0 +1,3 @@
+---
+_afs_mount_pattern: "/afs on AFS"
+_afs_module_preload: none

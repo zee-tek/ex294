@@ -1,0 +1,21 @@
+---
+- name: Make pseudo vice partition directories
+  become: yes
+  file:
+    path: /vicep{{ item }}
+    state: directory
+    owner: root
+    group: "{{ afs_root_group }}"
+    mode: 0700
+  with_items: "{{ afs_pseudo_partitions }}"
+
+- name: Enable always attach mode in pseudo vice partitions
+  become: yes
+  copy:
+    content: ""
+    dest: /vicep{{ item }}/AlwaysAttach
+    force: no
+    owner: root
+    group: "{{ afs_root_group }}"
+    mode: 0600
+  with_items: "{{ afs_pseudo_partitions }}"

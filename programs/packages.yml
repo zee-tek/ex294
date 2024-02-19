@@ -1,0 +1,25 @@
+---
+- name: install stack
+  hosts: all
+  gather_facts: true
+  become: yes
+  tasks:
+    - name: php and mariadb
+      dnf:
+        name:
+          - php
+          - mariadb
+        state: absent
+      when: inventory_hostname in groups['dev']
+
+    - name: Install tools
+      dnf:
+        name: '@RPM Development Tools'
+        state: absent
+      when: inventory_hostname in groups['dev']
+
+    - name: Update test servers
+      dnf:
+        name: '*'
+        state: latest
+      when: inventory_hostname in groups['test']

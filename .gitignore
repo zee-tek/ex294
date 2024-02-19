@@ -1,4 +1,12 @@
 inventory
+*inventory
 ansible-navigator.log
 files/ansible-user
 modules
+nehra-training/collections/
+nehra-training/roles/zabbix
+nehra-training/roles/rhel-system-roles.storage
+nehra-training/roles/rhel-system-roles
+nehra-training/roles/rhel_system_roles
+nehra-training/roles/squid
+nehra-training/roles/security

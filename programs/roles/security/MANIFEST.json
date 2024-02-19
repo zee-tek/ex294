@@ -1,0 +1,38 @@
+{
+ "collection_info": {
+  "namespace": "openafs_contrib",
+  "name": "openafs",
+  "version": "1.9.0",
+  "authors": [
+   "Cheyenne Wills <cwills@sinenomine.net>",
+   "Marc 'risson' Schmitt <marc.schmitt@risson.space>",
+   "Mark Vitale <mvitale@sinenomine.net>",
+   "Michael Meffie <mmeffie@sinenomine.net>",
+   "Ralf Brunckhorst <rbrunckhorst@sinenomine.net>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "openafs",
+   "system",
+   "development"
+  ],
+  "description": "Playbooks, roles, and modules to deploy the OpenAFS distributed filesystem.",
+  "license": [
+   "BSD-2-Clause"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/openafs-contrib/ansible-openafs",
+  "documentation": "https://openafs-ansible-collection.readthedocs.io",
+  "homepage": "https://github.com/openafs-contrib/ansible-openafs",
+  "issues": "https://github.com/openafs-contrib/ansible-openafs/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "d012003a2711ddabf40733b19c270882bd4247ed00d050f0f7e4e9cc9c387c29",
+  "format": 1
+ },
+ "format": 1
+}

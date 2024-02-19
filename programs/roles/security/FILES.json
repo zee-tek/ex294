@@ -1,0 +1,2413 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/lookup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/lookup/counter.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6771b7a5598f209d7e453032edc53b9dda241e232c49cf6bfe358941e2708d6f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/common.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e15011276f0279bc25917fb6b9dd28deb99c9261c5d8e3a1d0dd5036ce7e4087",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/o2a.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4ba834123f9902c526a350ad064fc9e36c08e510daea5218811b2059d9994b6a",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/kerberos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "47848f4854d7028cbff2d27011923ac6b820f15248f8b95b24ae692d309de16f",
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8633bcd068740c4b8bb440335f6b329c52706cd8917f655fa7767c1b6ee28364",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_volume.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "997d0d44aaab8f84a119e54cbb34694c3e5db7442614f86975d850b4dc997790",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_build_sdist.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf0a68ed91498dff287066191acc9d8d80582f36ab87d9181d316426689bd773",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_wait_for_quorum.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3e376b64fb3682668ffb7143ffc2dc36860735e03b27b04e883e732014fc005",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_get_install_paths.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82eaa32109107f00b25a0e2ee54ca7f378769cf634e6255c1b60f08e40ec1f70",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_selinux_module.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d591beca576b182411f37cc5a8d4b3d3b4a9e850fc72d8d875ca6b69434ed4b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_install_bdist.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e6822e4c79a040a952d559ecb887051d0ab1e716d01f9925f4dda962690f34d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_store_facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d068a7be306e51df903732311bbcb89e88bc10f5bb4b7a6dbfbf437d13bde461",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_build.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a0913b29a3841d95e215a7c2e8ba147d330a917880e042445efa2865ad9480d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_selinux_relabel.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df4c7c1d445a2537246b9d9659bc73d8afc1c760b8c38246f1bdd157c7737120",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88d429b52801f00f55ffdae0ef98206547c318bbd0e641648b7b58158f5973ce",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_build_packages.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "361faa63e8bd36a05e4f2563fd4fac28f9b7756961ad0518f093ddebb37c4465",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_build_redhat_rpms.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e364a4768b85eef93cb7d6b6860da065b04d72020c3aa7cbb2ef693a0ec1a6a7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_wait_for_registration.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8a7fff316be0a94c7fb9eb5498adf7864c4564c497e4f9a114f5e6569e96796",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_keys.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c8f16d60a9ade405eff18ae58efddbe20e4eb18e00194915e61f1d9652b3b095",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_principal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7bf1bd72839eb298df3bf832ab63bb70d3987a4e4f23a0baa42d9e77ee66760a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/openafs_service_property.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14257bc746fc13680c2443f3158b0717e937bf410edad7cd5959658af7c2c86d",
+   "format": 1
+  },
+  {
+   "name": "NEWS.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac3539ba929eec1478e4942a7a1a4965c56dff00043c4f26fc216702044558eb",
+   "format": 1
+  },
+  {
+   "name": "collections.yml.in",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3137e18b274c11eba37fd8cb451239c2e5109a7cf63f4d042d3c98f686ae4814",
+   "format": 1
+  },
+  {
+   "name": "playbooks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/realm.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80c2e0398d607e3ee04776e7f9de9b54d00edfef7ef9bb104cdd72228ef43aee",
+   "format": 1
+  },
+  {
+   "name": "playbooks/build.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eba2d64f76931fdb40dafdb675c26ede31201e6edad54f83639ed930bcc1812d",
+   "format": 1
+  },
+  {
+   "name": "playbooks/cell.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c575a803a3dd7a816c210432ce8cb400dbe71af95342dc64dfbd3cc81b3571d1",
+   "format": 1
+  },
+  {
+   "name": "playbooks/hosts",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/hosts/cluster",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b8770fbca35f7c497e59c0dd7a4629a55cf6590fe0d042430030b67bc142573",
+   "format": 1
+  },
+  {
+   "name": "playbooks/hosts/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/hosts/group_vars/afs_cell.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "01f7a707e772607a945e28f9de8e7650d09596ab9afb1ade523792744a8b2f31",
+   "format": 1
+  },
+  {
+   "name": "playbooks/hosts/single",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c36f191d3ef169b8f1ace1f3b5aa8ea68e5ec6a052e00c5f94d819028d588602",
+   "format": 1
+  },
+  {
+   "name": "playbooks/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8d1b191a9eaab0fe90083a482461e3eb4e0659c460f71dffb99a550135409f6",
+   "format": 1
+  },
+  {
+   "name": "playbooks/ansible.cfg.example",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d7bed5572a55e8dc720306dc665f217c1eebb002e27d97f84006fd5fce7ac44",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "acce8f845b0d47014ae52732ee2117196606fd18ed8f6f978e9e0bad257acbc8",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db022ab321c223ac1a684a5c02ee490cc22278bed6b31f5a2348c9c1bf65ebea",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a70f0aaf37878b7107dfbef393d42a00dd3133e31020f0ae143ec78b068d5309",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/CentOS-8.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a381b9ae175624a7cd747a095a4b7f694419e196f154a55ba73e3f4f5748ad02",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/Fedora.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a7098ad50bca1ef07c5b3e652b3e66187a55ed72964a0431c6d69c16c7d15981",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/openSUSE_Leap-15.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f02729e66f810f8058dbfd5226d6e6b97570d133fb733c0c6bdc43caad99ff30",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/OracleLinux-9.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "869e2e5c6488580cb9dced2a5c9938d3b9f066bb6e6124c9ade8c09dd5ae0d6a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bfa7fc39e816cac399872fcb34e78cbf35e3c0c7594569df2d4b207965d11ecc",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/CentOS-9.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e70eca0792a68659f27c4e086ab664fc16fd3a751571cba8ed098f4503878bc2",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/AlmaLinux-8.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8dfd5a2ddc8a509d3e25ffc05b2e3565a92d163f10bff8353001b5fde6ccb50b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/CentOS-7.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f9c7212b35c51de50e19408b23d7a2edff33f74d4d0574b94c7d19f35124ed8",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c374cbe20f38f9f011a8e153e299727b889a1f70f38819b86fdf62cdc1f15702",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/Ubuntu.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f72b40b579c614e772e31316dd40f1a3d216ea1cd85660be2a9c661e4271324",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/RedHat-9.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "789b4dbbd44347c1cd6ef5ebaf1122fd9ed791f1aee664ddf4b411b87788fc97",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/unknown.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eadb4daf754446d1e21590a846c5d7e3199729a439c0c28dee806568ca025d17",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/Solaris-11.4.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "317823b3c5727051cefd1c9417d080535f722fa10b9a8d3f5acbe80205489a44",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80246793bd68398748ab996e52d06327f73ab5e97a26c816e3036e4096803460",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/CentOS-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4b5e5c2e0b3e5aada81cd33856385f67abd6cea5517897b05e3c162f68012e8",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/AlmaLinux-9.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "616f3c196224c8cac0a5eb125fa6e5d348e9388838fc6b5763ecc226bdb6427b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/Rocky-8.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c5cecac457d003ac4aab78172d28a5490a8d90eaa68a32a15e6c5e03ba2dd35",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/RedHat-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7dc606825f0b7967f75de33446fed80b744ceba19d243998d6ebf406df210e73",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/install/Rocky-9.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05c7b43679f68c39d4db48044e60276db4701c98c20d8cea2d53c6211ea4e2c0",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a4f16e956c0c30a2ebcf6c25fbf9b0e645b773b7c840ed7754ef769d79a52d8",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8de6adb00e4ce952a6faba372aed4810167621866b89e9ebe26bdec3588fc8c6",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb8eadbb795a7a6fd17bcad2e1a9b471d16b46386be675fd3c6018d090d159e7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d42ce8cd20a9b410396d144012926230a5040d9812c2fe37574a3bf0dc9866c",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/vars/Debian-9.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2da608a70b74014f85e1ab0c28f2211fc3200fadd71749db124c864fff0b2a1",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/vars/Debian-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6e308328909eadf36ccf126d6a3626a9cccd42df6409835a719e9ec62be5251",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/vars/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87b98c7f2efcf5a7a88a1670d8b66fd1ccbaedd934af59873bc50738a0565f5a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/vars/Debian-10.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b994af73b9a6c59052c880d4d1c9ee76f5cb008f45a4ec8336c32fd71d4d0780",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eea50c862410d13260dde556733ec78e1c14f69c3cdf2e3f83498abe31e77ef4",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/server-etc-hosts.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87fad5bb06c3cec0af654be24612bb19f0cbff819943b28e855e89efc15d8c07",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/server-partitions.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8f14874d57a70192abca3f431331fb595499d5f83aacf0e6243dbf64372c874",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/check-variables.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ffdae84ea5721b218e684f9e1087ef7eaa0ac66c7ff0afa09c8b06b59c2d780",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/security-policies-selinux.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f37cbc1d0e7a17ff28b18915f44e560e1664c0d5cd794cc3c31b27f71abcfcf",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/security-policies-none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/firewall-none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/pre-install/firewall-firewalld.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac7c7a089f75760c07dcef33ed4a6aa0e254c5432775486e5834a26fde37860a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/build",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/build/all.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ce96f7552eaa606d09c941c077a6cdf1097530af3724884ef78014196246935",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/build/nolibafs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "94a2a05a84828a80f01506357376d302d0f3bb383e6ad74689dbc7456e5a347a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/managed-suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92fb893879a2f9fdc6006f469f9dc34f977daaa51e0b24b08969c6bad8a29230",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/packages-redhat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc648a828c1280e507efbaa2541c3c0e17fca7462d9074981866538a6a4eaaed",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/managed-debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8412eefc85d392be0fadc913e30e936923fda8c3487c26132194370b1f4a2f06",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/managed-redhat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b91acffa227cbca2b67332c267c41785cd110ce7a898db7fac410ae136fbf483",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/packages-debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "72a5ac78c61a41950553e7e7eae6d75cf4103173f37a2f3c7d7e5948c9f8b12a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/unknown.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "903ab702dc95fb0a7693d1d32cf7ab266ea367fc0c286fa555c9ac6df2895d30",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/bdist.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f320dc1de51881d80ecd45b5efa0526fe8990929638a06a3c402e2b4ad8c6209",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/managed-solaris.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af3e0917e5917d4fd886a8b78a38a2b78b831a6c0f2c2b1851eb2f66cfce50d9",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/source.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1113d0f905a5411b40bea5781f90d7ca8212b5ff73696cb4509869d668b8c23",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b59e7a6b424ef2e21ec7140c52611b733309cdb74ae635952cbf81e07d8977e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/packages-suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c93775d53d101604201785039a8c7d68102eed53422a570dcfb7d4a2fb8c26d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/sdist.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8213265341cb184bd38406baf3e0ec7a639674e87616354d16e9754345c2fcf6",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/install/git.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd76c1ef7691c395e25de8eadc0c816e308e98ae816523d63b391ac1eb003c72",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "061c201b1d77ef6f324e00cc80df77c49cad11e863d114add7ff406279c0e764",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/service",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/service/upstart.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "402c50c54cf6a8940c6f2ca834f32d36e900f6c2c259d1e9d37d6755bd08d0f5",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/service/systemd.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76f157a9504e13856ce365330617605d14c388ebc185ca29f69ba6f1ff86de04",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/service/smf.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de4014662cd6e2c3762b99db46713f35bb3c4d5a5d964c30ba8114dac6a24d0b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/service/bsdinit.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ea9676147883fde4a704f06ba563e9c4f9aeb7ac07dc8f1f369b5880d8286ec",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/security-contexts-none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/server-config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0ef8c249bcbe63076f28131ef9d40d98316cb0ccf4ed0efc3893b30056708cd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/enable-service",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/enable-service/upstart.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ff19c20cc0dd1dcc52b66d2f5edcc6da9fc769d9b5d166a2c5ab014c395ef7f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/enable-service/systemd.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b5447a54ca0151211599ac81df4f552502e559fce7c707391f2afb4eaef1786",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/enable-service/smf.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b5447a54ca0151211599ac81df4f552502e559fce7c707391f2afb4eaef1786",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/enable-service/bsdinit.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b5447a54ca0151211599ac81df4f552502e559fce7c707391f2afb4eaef1786",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/security-contexts-selinux.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88daa00b00567fd7f1a51d7dc1aecc1b5d3611d01f98223b921e177e74a4710d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/server-key.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "570bda360e27d7d5c33cf1e71c1f0eb30e3519cb8b15885213b5f0a17749386f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/tasks/post-install/bootstrap-cell.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e7a2a292c5fcf52c5bf6557f38d8a476d41366d94caae3867aeb178d282506d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/handlers/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b17f8d6f67a3c015a10fce1b08912ba167fb8e5f8f6c56572a1cfcbb05af018",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/openafs-server.upstart.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b980b45ac268c47dce131c54cad867b8f6f4f596d672ebc2f880007d4a009fc1",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/NetRestrict.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c7c733cd039c1c8fd9226ba506d1f0a8464ef9f83d1cf4a5eb42265663f586a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/openafs.te.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e70b7ee3295dde3f5f5b70f49b630f5e6ff4fe25c36a392dccb76020fb05678",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/BosConfig.ansible.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b1995c09455da128f498b7ea99cfdd530915c309187fa27e29280c8ad376d637",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/openafs-server.service.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5a55239a6804908d10558e5f1125e356f9c349b93c64de6c0376b2d6f688a590",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/CellServDB.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4cc4ede9848f64f72075430f5c0bf06e086cc3487dc4e62a5376298f4844b10f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/ThisCell.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5d0324a69f8507a953a3e002de11ac9cf63ef14c53b4f8b337d95d32b9b18026",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/openafs-server.xml.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5be27f2d6ef5251e86515cdcee46113e9220f4bf0a0a78c0cdf9edd601b3d07c",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/openafs.fc.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "597d58e9489e684c26392c10727eed996165a4f26da260b80319ad8e270dfdac",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/NetInfo.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec7948fbcfdbb64440fa3438f75def2b0641f469002dff11a5239b6eb70f7528",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/templates/openafs-server.bsdinit.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2be5bd1df03fd32c503999e914cecd2d381a9012b2704f7356f1f9b2629d2dd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f0c90f77473027efaa67c3bfd9b6d05ed1b8f6c16b846e781a5e19e9d7d54aa",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc80c83a93d0e66db1beaa537ca536c2d03ef2a56772520c0a60f9bc254484f2",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa5a7fc719ece8d212a1b92b531b52744e7659117cafc54dd1aafedce680452e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars/CentOS-8.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d4840c02157f71e11281b66c5ded9153c2b61d5d41858fbdc8220a393b86316",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b50cb60a555393e7c1782ee35a5f91eb1c27589fa94ef67db8ca2ea1eaa329d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars/CentOS-7.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f228f2288af6b5b084a601b53cf158e18330c9c08c3bd9f7f7a55a50998dcb6f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars/Solaris-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_server/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c132f76f0ae1f495405801be03063188ff58c0113524fdcf7cd51f66ffc97604",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bac81924d3167cd0f700fd1abe09c31ea1661dde84f3d211185fd8e2c768a9bb",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a87478f47bf1dfb743108bdaf91a09fb7480e295c1cf8cf67d837b4f1a1303bd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/Solaris-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28d7560a5500337f22bccb72952d8a5eb23c79a8bd99ba7f2e1280207cfc13d7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/Suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e90f64cbbfbd820344d82c29f06b74ea23b34d1f9fa9d8734e5417be401fe7ea",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bba178a86c85ed2b5de4e29f41eb4d038e9e6df3588314c4070d376821081ee3",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/CentOS-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "caf82658a412ac56ad1944da327b09f0b703db38b15b85236ce63382ac1bab84",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/install-packages/RedHat-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e84c66876358f9d14afba8c3ac52549e42c276582699c03b9899ee7c35b1391a",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/system-firewalld.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c3a739b325793cbf9488eebbb088c9db9f96204a1b8b8105473e64b0fa1dce6",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/unknown.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d4e29996df21723ae15dcdac821cdb62b359aa87d573f8824ba672418d978a7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f30ab833abec17adcecf0b33d8a3944d803498a459539fac0efc6017a3a04488",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/setup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/setup/mit.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f6b1f1b9e8216d96ba525f425c1f6637cfe51befc63f3c7c8001a6f9e523c596",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/tasks/setup/heimdal.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3884637949156161ccd9c89d1932260f2406abf1f5f27f6d51d5640ab93fcb21",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/handlers/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3abc108fe6d92b401b3614300c0b886fa23825f6d4af20268e2a422501a291ed",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/templates/kadm5.acl.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6cba511abb09f3982461883f62d88d2b9a5f3685209684a8bfe551bc0ff0bf3b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/templates/kdc.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4ad2923a3825a59b1d2c769f474bbe4104190a72c6a6a7c0b62b472e5d24bd9",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/templates/krb5.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db7619636f8f615b3cc870ec8d7d3bd51c2dd62c82f67fe7c45ca21e1fe16dcd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae067f39e3d3dddb2103d99fe60c379b84a8ff9c81cb61ef1376abe4ab6e5485",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0b4d7df6fc41a004988203109de2a5260ef42caad10b443df40e0a5589585428",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79f902eea05416f4ebe2dca8deb12a0c43e4a8d33becbea7967f2450037978b7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "852d9fedc40ab229593ceef1c73b20d7e38825b79fbde6a8e91809b029a1f5fb",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88bf136e2162393ef76633032697f83a0e749ea79baebbe0dbd6871d41a2a63d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/Solaris-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "514e37430ce09e1f92ffc4c84c160d04758353c3e7ba93c1e712a24933c9c7d7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/Suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd630ac8bcba039f599079416a5e2aa5938ab3188d7b367e407ee47356d88c69",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "453dfe8e352cfb1ef1a099bfbb2dead6202d2dc3d9143630520b9e96cc0bed20",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/CentOS-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f751102e66629b20807b4bcd7d5f8fbbdf48f44b9b0aa027c21d5d5115b6016",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbserver/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a70f0aaf37878b7107dfbef393d42a00dd3133e31020f0ae143ec78b068d5309",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/openSUSE_Leap-15.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed4d5dd0165b1721fe5d30de303d3b0b30f760ae71e7c49b5d41816a4a6994d5",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e80a2ab186bc4292b860da117f58d5009262bb48d1d8447bcf4eac81159b936",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a804535244a4cc2533d019c0268b9d5972018decb36b7061c22ab9902401e23",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/unknown.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eadb4daf754446d1e21590a846c5d7e3199729a439c0c28dee806568ca025d17",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/Solaris.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9665c90943fc8aeadf7fda32686d37469dbb84bccbbd33fd6bc24cb14bebea4c",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/CentOS-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98534d6188f021458bd76c46bc3078ee31e1a3a6ee56b8ef17a041e304ecea8f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/install/RedHat-6.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28086b539d2b0fe3f0b43984bc3361f7674b1de082ef7e34ff2ada93b0354c57",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52c6729b549347d59a33f2ba152afa17870d120bdceaf50e7fc2513013191185",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a82d815894c9ad3b564aaf6d62097587f65d26b0ac6b35cc662edc4e7696647",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "66c904edbcf8fbc5b503842bc63b158724858a210b89aad92a262f49fb84349e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3535c1bb978d43728c5605821279e22d34316860e0e7a8952972be1bbf0e7cd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_devel_kernel/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c911422d2dfc66dc8c4370b226b8cc491922e523af49b4ef55278ebe75cc119",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "472825448d04874a38d2ba01aaf2aa4f2aa1f3eaab4908c3b363bcabc273a26f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73471ac259f98c53134dbe8a35f94f915d35ccee0abb153a2c9b5d60314af6a7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages/unknown.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eadb4daf754446d1e21590a846c5d7e3199729a439c0c28dee806568ca025d17",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages/Solaris-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61fa65b94d411843ff84244c58014b3aa9f1bce8a632a687687838cbc18ab964",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages/Suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "641ba470849a8e80e1124df53994767914834e9f145b0b897edd4a31681f7fc4",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/install-packages/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "723733bb807a24db4a9aa831021a162df87a78dd99a7d626302f36c5986a91be",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/system-firewalld.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c3a739b325793cbf9488eebbb088c9db9f96204a1b8b8105473e64b0fa1dce6",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6f7afa3f2c59eee93376224d92af15ae83e02511eb52e48ba3091699bb14cf1",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/templates/krb5.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25afe628d28f7dbdb3150a9819ac7c5e8a533950a2e3e6924ba611a70128c133",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f6d91568ee82afc432c2bdc55c1ccc9cc89f1483d8f93252b47285ea7d8b398",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6669822b87c11ef5625138cf9cf8bbb0eceb9c6581275ac17adb7bceaad51dd2",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f487fbd14f29a7038c8298693fd3849530a4f8ba2932d84ef180cfbb5c3d4b81",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "936b148c189aab19bb936dcdb87a9f68b4d82807983d6d4906b63e26440c151d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f08c768814c2c8a0c6d6899a3cf2ddcdda8fb578b86b95b439ee62353835be17",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c6c6f221df4d9af1612bd79d762d64398f61f49cd7f9c9a9c541107890332ed",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars/Solaris-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c1558572cc306f578b3a1c0c76d1ff0883a25c0720d7dcbe5edb63771547531",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars/Suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c517f6e3254a556301049a2e71011ead89bbd99634ef0e8b10a3330552c65ece",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c6c6f221df4d9af1612bd79d762d64398f61f49cd7f9c9a9c541107890332ed",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_krbclient/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e31c4252d7ca05568a3baa12aa5a1f92820aeae3a7e329489d19e4f57a4cd0f9",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/pre-install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/pre-install/check-variables.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a8c381f745faecf504e276493cf47d9442cd1c8f5a52fbdf8c08963d6edfe37",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/pre-install/firewall-none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/pre-install/firewall-firewalld.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9680500926286ac329d2b82ae707c2237eacb6d08c4ecf699f59510c5514c661",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e78b2d53171a1dde6fa66174702fc0f2d1613255c3bce6282512faad53060736",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37fe0e69c17e10bc4b1df388f008ad573be44231d541434288e41b0f980f1aa0",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-suse-dkms.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e2592e06e71decbff25f29cc38a9811d23eb1810dc9a17e73eb7b048dced1da",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/unknown.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6f18a2cd9794e48e70a2a39f3fe3b2d48b8c11403eaea366a7f1dbf44db7c04",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/bdist.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d8023217d9f7078b6b75d822997961de5ab92cc01f79a4d134bcb9a8929bf11",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-suse-kmp.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd20ce0e12b41c3783e9064de9e285f254458d2977c18ac79ed8eba393b00bb",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-solaris.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3a0247d77a475dbcc49b6afd596e0b9e85c76ca8198b96ce31a3369cb04c74e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-fedora-kmod.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dda07beb7138d7647c816dda1ff6507938370e562c6e136b6c4e802fbe9ce857",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-fedora-dkms.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec431db4a6db918259e94073e9bdaaac02bfba3e4ec47ac2bfe372f0bd4ab8c3",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-fedora-dkms.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d45ef2837f2ace3ba154772176c4e0201d5ea77b4c555ebe6dab1144758efb58",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-suse-dkms.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e8466e2c397ed5b42a93701ae1c66434ba666e047c1c9e4f1242b9a4f1b1f9e4",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-redhat-dkms.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1be90d918adaaf43948c9f91f15b5f1da135e9a74e95c5a5a6efb9ebf5f7bdee",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/source.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ef9ba0c785542b2d0e5f263f155c204dccffa4014bb901c3cfe49d6a8e7e44e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "863c03ecb65beb46fcfd9e61b81a6f1b231c9c1158bf1c8bf153ad2c0e0892d8",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-redhat-kmod.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a3a3a06dbc1ebe895c652cc2df94d6113e2396f4f354e5ffb9f752fa136d449",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-suse-kmp.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12c617c55984ba14e2b02263f2c7d918f73449d0eca1c7075a1f39cfbcfcc465",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/packages-redhat-dkms.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d21d5c2648bfb009361c7323239c77afa7d8ba8ab28202b58992f95e9831ed6d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/managed-redhat-kmod.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78633cfd9f0a2c6f4e7f32951f5b08ccd47766e4f5d9afa5f4d01de530de32a7",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/sdist.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "134604250e4e9175b6b759651628d552e9f1758382b7eaa04da8b0ba40ccc800",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/install/git.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "167ca52a9be79b4f96994f173ee9d1db56a70edcd05bd5c94c008b2490ddada5",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b17ad1bf4225727bc9d534b86d9307680bbce8268f845acabfdffed6763c1e53",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/service",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/service/upstart.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ce5849b6a3df95c76b2cc38bafa0dd09969dbcb6ed539a86c96afcc142668ef",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/service/systemd.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e02c53e9d012e108c72bc52607fa649889d025664b7b892e2c91a158ac2ebb1",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/service/smf.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b9c477687fc239c0770db01b225ecbac66ce9ddcdde05c2ff437b27610c8f85",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/service/bsdinit.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "440b15b8b8b7b030b15e261db59626d1cec8faa1d5921167ff237fd3d3d183d4",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/preload",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/preload/modprobe.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37a77639ce32cfd1f7a7f6b3e88552b0d35c800b39bd3be7b6fba89c85a46b04",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/preload/none.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/directories.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ce4cb9fdd1cde882c5b7659c0af977cfa4b3adc5ce40473e793baa4f6556e3b4",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/enable-service",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/enable-service/upstart.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e6966437d2657259f01961fedb457f65570c37a3507676ebb9b0fc53de9d664",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/enable-service/systemd.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "271ed457fba86965623352d199315d3bb93544c25c53014d75f88d3efdd33563",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/enable-service/smf.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "271ed457fba86965623352d199315d3bb93544c25c53014d75f88d3efdd33563",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/enable-service/bsdinit.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "271ed457fba86965623352d199315d3bb93544c25c53014d75f88d3efdd33563",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/configure.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c1cc386004fb12bb2ee4d687be01a1405ad25f495ca96dd261552cd50f1c115",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/tasks/post-install/verify.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f76f1baa8ed7099fc881aff3b038b97b0ef761a56d382d511c0b613232744ffd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/handlers/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8452a76c806d234100a4e1c0cefbf90fff3ef3aa31b9341619142f6de18633b3",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/NetRestrict.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9df7e2ad42e15c8ec3bbc21ee7c699bfa60552e4c670e18979e8612acbce7f2e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/openafs-client.xml.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77553ef8b5745a4add0f23a821b6e46ec4bd1fc7c0185891bab091da53a3a54b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/openafs-client.bsdinit.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6918848e26d0623a5ada5b4ea9d85d76bef51eb9b0c706b823f998b5e6737acd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/ThisCell.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80284866dc571665b777b36627eca9a8d1e5c27ac50c162690ca070365e2c5d0",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/openafs-client.upstart.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "169a70bbc1490d24066191ef46b3226d8603cc77cb69894ad7201997dd042b4c",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/openafs-client.service.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78ebc6362d5b1aad87723eaffafcb3c04cd3cf9bb9e33fa707a4ef97472784ff",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/openafs-client.method.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "45bef02947720951b785e3a96bede0fbc2e8c7e1535e4d3cb824f2e10f3379ee",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/CellServDB.local.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "563c4243d80a8b65e6cd5d91b4d3b7a3f914117aa09538483d1ba8e9d970fd3b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/NetInfo.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48523ae11e07794cd33260686fe26fa3b3c130f07e3592c0d3ef2f9f94415fd8",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/templates/cacheinfo.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b937ae22b3568f7c3dc1e6322ff5f18b49775d8605271c5bab35c0429fb52ea",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9fd106db75eb7768a3aa899b5792ccd8da6530f29b969af65192e20d59a041ad",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "034214c872d4aeee06c7abbe3f8f3e6a9ece5dd5633ce6b8ecb3c533b50bbc2d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37e157f40a9d38b3299aedac65cecf177d4de4906d21219e250da743cdeee202",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc77f05f02e746ed9e09f664b8c910f484143926622c196629a2c2bd04837ec",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aff39886a300d5dec7bc65d9554bd33ba377892e588860d877899b859a84687e",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars/Solaris-11.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b54e4fc86ec7eb516ecd9fd1fe5f144faa321616152658dc942086c150bc1cc2",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars/Suse.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc77f05f02e746ed9e09f664b8c910f484143926622c196629a2c2bd04837ec",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "06de7ff6cb50d628fc214b87447c6ce5127cecf1d2dec5797076916bb3bc759b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_client/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/.ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aa0d24ece450f58b1c8a119e7ec7d0e37603e2f3a0c54332f6b0dbd8b0c13955",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks/checkout_sdist_upload.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b05c67a318125c30b0c941f89076734a407e512e5e6f387392bcd6a58e39c27",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks/autoconf.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27d7d38363114846e7fe651f69bbdc8b6927fd757abfaae429310bf9d5f11d69",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks/checkout_gerrit.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f653a5d61df9a0b5d1abb16f0c3fadd3ff09fa8dff7c14fb508db35f174ac54",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks/generate_csdb.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c19ba2a04e9c697f0d8b3f39b1f972c29bd2c92d079c184826c3e02eae1f733",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7705da0ad33760456447312a06502714299194faa1f85094172b5854ffce08a2",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/tasks/checkout_git.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16f8a618bf3154c13f1c0c6caba23b68a7b03696a5bbe5193dece733471d3f84",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ce1cde8e24185bcdb4cd383123669689fdab18c8b5b6db51a533ef2f5000e8f",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fee33ad3c8d9a0b21491bb9e6c49b3cbe15f4586efac6010d014918a134503fd",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/.yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/defaults/main.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbfa9387300b9cc3ab49ce467e4c3a46af4fdf2f8f60ad92e95cff38af4828c3",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/Fedora.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbed95f09043a29bdf4a3248112569ba89ab6db6a5389463ce301aeebfec5206",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/openSUSE_Leap.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df24d33993e7244b166c5b0aea9392f244a360f14da11a8e59578389d5a15490",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/RedHat.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "29d3c68685b9edac171fa5743bec335a54d7254b78503865cc3f2ad435ffa40d",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/Linux.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/FreeBSD.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6efe5c1fff6638634d3183dff919ca90075e6417cce8cde66811dde23dbac225",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/AlmaLinux.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5a48b0051127d425876b2e1dfaee39d9c1e2dbf92946f967e9d1af9fb7151593",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/Solaris.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5f026b7162939019be8d535fbef9cb1f9041d2f35fb4ba6a5f41f60761a5c1b",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/Debian.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/Rocky.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb4c329a552520493a17e19759005450c597412b9fd1d68e8f184879442f13eb",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/defaults.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090",
+   "format": 1
+  },
+  {
+   "name": "roles/openafs_common/vars/OracleLinux.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c1e351e749170b17c6f755eded7f8ba6607c0f2817647104cf0ef8d816a14e2",
+   "format": 1
+  },
+  {
+   "name": "version.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e59749325be991cee3c0aa74fa2f650c30ec50927f821c91c5e80bf7b274a7f",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4dc4be63c3c13fa23dc6b70c175d4beed78a75dd9533947543c3b1f0899d5d",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

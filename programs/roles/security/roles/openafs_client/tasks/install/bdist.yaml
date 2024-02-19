@@ -1,0 +1,73 @@
+---
+- name: Verify selinux is disabled
+  assert:
+    that: ansible_selinux.mode != 'enforcing'
+  when:
+    - ansible_selinux is defined
+    - ansible_selinux | type_debug == 'dict'
+    - ansible_selinux.status == 'enabled'
+
+- name: Verify the path to the installation tarball is specified
+  assert:
+    that:
+      - afs_install_archive is defined
+      - afs_install_archive != ''
+
+- name: Ensure tar is installed
+  become: yes
+  yum:
+    state: present
+    name:
+      - tar
+      - gzip
+      - bzip2
+  when: ansible_pkg_mgr in ('yum', 'dnf')
+
+- name: Ensure gtar is installed
+  become: yes
+  community.general.pkgng:
+    state: present
+    name:
+      - gtar
+      - gzip
+      - bzip2
+  when: ansible_pkg_mgr == 'pkgng'
+
+- debug:
+    msg: "Installing {{ afs_install_archive }}"
+
+- name: Create directory
+  file:
+    state: directory
+    path: "{{ afs_tmpdir }}/install"
+
+- name: Upload binary distribution
+  unarchive:
+    src: "{{ afs_install_archive }}"
+    dest: "{{ afs_tmpdir }}/install/"
+
+- name: Install binary distribution
+  become: yes
+  openafs_contrib.openafs.openafs_install_bdist:
+    path: "{{ afs_tmpdir }}/install"
+    components:
+      - common
+      - client
+  register: install_results
+
+- name: Install results
+  debug:
+    var: install_results
+
+- name: Store installation facts
+  become: yes
+  openafs_contrib.openafs.openafs_store_facts:
+    state: update
+    facts:
+      install_method: "{{ afs_install_method }}"
+      client_installed: yes
+      bins: "{{ install_results.bins }}"
+      dirs: "{{ install_results.dirs }}"
+  when: not ansible_check_mode
+
+- include_tasks: "{{ role_path }}/tasks/service/{{ ansible_service_mgr }}.yaml"

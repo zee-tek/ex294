@@ -1,0 +1,41 @@
+---
+- name: web
+  hosts: test
+  become: yes
+  tasks:
+
+    - name: groupadd
+      group:
+        name: webtest
+        state: present
+
+    - name: Create dir
+      file:
+        path: /webtest
+        state: directory
+        group: webtest
+        mode: '2775'
+
+    - name: link
+      file:
+        src: /webtest
+        dest: /var/www/html/webtest
+        state: link
+        group: webtest
+        mode: '2775'
+
+
+    - name: data
+      copy:
+        dest: /webtest/index.html
+        content: "Testing\n"
+
+
+    - name: restorecon
+      shell: semanage fcontext -a -t httpd_sys_content_t "/webtest(/.*)?"
+      ignore_errors: true
+
+      
+    - name: restorecon
+      shell: restorecon -R -v /webtest
+      ignore_errors: true

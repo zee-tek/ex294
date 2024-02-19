@@ -1,0 +1,6 @@
+---
+# OS dependent variables
+afs_firewall: firewalld
+
+afs_selinux_tools:
+  - checkpolicy

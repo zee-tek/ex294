@@ -1,0 +1,91 @@
+---
+# Security model: none or selinux
+afs_security_model: "{{ _afs_security_model | d('none') }}"
+
+# The Kerberos keytab for AFS service on the controller to be uploaded to
+# the servers.
+afs_service_keytab: "{{ afs_cell_files }}/afs.{{ afs_cell }}.keytab"
+afs_service_keytab_externally_managed: false
+
+# Is this host a fileserver?
+afs_is_fileserver: "{{ 'afs_fileservers' in group_names }}"
+
+# Is this host a database server?
+afs_is_dbserver: "{{ 'afs_databases' in group_names }}"
+
+# Fileserver cold start.
+# Set to 'yes' to defer fileserver startup until database quorum is detected.
+# Set to 'no' to skip cold start tasks.
+# Default is to detect by checking for the presence of the BosConfig file.
+afs_server_cold_start: detect
+
+# fileserver pseudo vice partition ids to be created (for testing)
+afs_pseudo_partitions: []
+
+# Ensure the root.afs and root.cell volumes exist. (The root.afs volume
+# is required for non-dynroot clients to start.)
+afs_create_root: yes
+
+# fileserver variation, one of: fs, dafs
+afs_fileserver_type: dafs
+
+# bosserver options
+afs_bosserver_opts: -pidfiles
+
+# Run bosserver in restricted mode.
+afs_bosserver_restricted_mode: yes
+
+# Extra bnodes to put in BosConfig
+afs_bosserver_bnodes: []
+
+# ptserver options
+afs_ptserver_opts:
+
+# vlserver options
+afs_vlserver_opts:
+
+# DAFS fileserver options
+afs_dafileserver_opts:
+
+# DAFS volume server options
+afs_davolserver_opts:
+
+# DAFS salvage server options
+afs_salvageserver_opts:
+
+# DAFS salvager options
+afs_dasalvager_opts:
+
+# Legacy fileserver options
+afs_fileserver_opts:
+
+# Legacy volume server options
+afs_volserver_opts:
+
+# Legacy salvager options
+afs_salvager_opts:
+
+# Paths
+afs_asetkey: "{{ ansible_local.openafs.bins['asetkey'] }}"
+afs_bos: "{{ ansible_local.openafs.bins['bos'] }}"
+afs_bosserver: "{{ ansible_local.openafs.bins['bosserver'] }}"
+afs_dafileserver: "{{ ansible_local.openafs.bins['dafileserver'] }}"
+afs_dasalvager: "{{ ansible_local.openafs.bins['dasalvager'] }}"
+afs_davolserver: "{{ ansible_local.openafs.bins['davolserver'] }}"
+afs_fileserver: "{{ ansible_local.openafs.bins['fileserver'] }}"
+afs_pts: "{{ ansible_local.openafs.bins['pts'] }}"
+afs_ptserver: "{{ ansible_local.openafs.bins['ptserver'] }}"
+afs_salvager: "{{ ansible_local.openafs.bins['salvager'] }}"
+afs_salvageserver: "{{ ansible_local.openafs.bins['salvageserver'] }}"
+afs_udebug: "{{ ansible_local.openafs.bins['udebug'] }}"
+afs_vlserver: "{{ ansible_local.openafs.bins['vlserver'] }}"
+afs_volserver: "{{ ansible_local.openafs.bins['volserver'] }}"
+afs_vos: "{{ ansible_local.openafs.bins['vos'] }}"
+
+# Directories
+afs_afsbosconfigdir: "{{ ansible_local.openafs.dirs['afsbosconfigdir'] }}"
+afs_afsconfdir: "{{ ansible_local.openafs.dirs['afsconfdir'] }}"
+afs_afsdbdir: "{{ ansible_local.openafs.dirs['afsdbdir'] }}"
+afs_afslocaldir: "{{ ansible_local.openafs.dirs['afslocaldir'] }}"
+afs_afslogsdir: "{{ ansible_local.openafs.dirs['afslogsdir'] }}"
+afs_viceetcdir: "{{ ansible_local.openafs.dirs['viceetcdir'] }}"

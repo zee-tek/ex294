@@ -1,0 +1,34 @@
+---
+- name: create user
+  hosts: all
+  gather_facts: false
+  become: yes
+  vars_files:
+    - vault.yml
+    - user_list.yml
+  tasks:
+    - name: add group
+      group:
+        name: devops
+        state: present
+
+    - name: create user in dev
+      user:
+        name: "{{ item['name'] }}"
+        comment: "{{ item['job'] }}" 
+        uid: "{{ item['uid'] }}"
+        groups: devops
+        password: "{{ dev_pass |password_hash('sha512') }}"
+      loop: "{{ users }}"
+      when: item.job == "developer"
+
+     
+    - name: create user in dev
+      user:
+        name: "{{ item['name'] }}"
+        comment: "{{ item['job'] }}" 
+        uid: "{{ item['uid'] }}"
+        groups: devops
+        password: "{{ mgr_pass|password_hash('sha512') }}"
+      loop: "{{ users }}"
+      when: item.job == "manager" and inventory_hostname in groups['test'] 

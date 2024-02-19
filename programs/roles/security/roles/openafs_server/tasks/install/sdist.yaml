@@ -1,0 +1,12 @@
+---
+#
+# Install OpenAFS from a source distribution tarball.
+#
+# This method is a convenience alias for:
+#
+#   afs_install_method: source
+#   afs_checkout_method: sdist_upload
+#
+- include_tasks: "{{ role_path }}/tasks/install/source.yaml"
+  vars:
+    afs_checkout_method: sdist_upload

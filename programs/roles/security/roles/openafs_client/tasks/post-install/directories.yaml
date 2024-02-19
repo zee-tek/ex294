@@ -1,0 +1,50 @@
+---
+#
+# Create the afs client configuration directories and the afs mount
+# directory. Note that the cache manager may already be running, in
+# which case /afs will resolve to the root.afs root vnode, and not
+# the /afs directory.
+#
+
+- name: Create directories
+  become: yes
+  file:
+    state: directory
+    path: "{{ item.path }}"
+    mode: "{{ item.mode }}"
+    owner: root
+    group: "{{ afs_root_group }}"
+  with_items:
+    - path: "{{ afs_cachedir }}"
+      mode: "0700"
+    - path: "{{ afs_viceetcdir }}"
+      mode: "0755"
+    - path: "{{ afs_viceetcdir }}/CellServDB.d"
+      mode: "0755"
+
+- name: Lookup mounts
+  command:
+    cmd: mount
+  check_mode: no
+  changed_when: false
+  register: mount_results
+
+- name: Create afs mount directory
+  become: yes
+  when: not (mount_results.stdout is regex(_afs_mount_pattern))
+  block:
+    - name: Create afs mount directory
+      file:
+        state: directory
+        path: "{{ afs_mountpoint }}"
+        mode: "0755"
+        owner: root
+        group: "{{ afs_root_group }}"
+    - name: Create not mounted placeholder file
+      copy:
+        content: |
+          AFS is not mounted.
+        dest: "{{ afs_mountpoint }}/afs-is-not-mounted"
+        mode: "0644"
+        owner: root
+        group: "{{ afs_root_group }}"

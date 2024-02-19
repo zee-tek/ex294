@@ -1,0 +1,24 @@
+---
+- name: setup hosts file
+  hosts: prod
+  gather_facts: true
+  become: yes
+  tasks: []
+    
+
+
+
+- name: setup hosts file
+  hosts: prod
+  become: yes
+  tasks:
+    - name: copy hosts file
+      template:
+        src: /home/ansible-user/ansible/ex294/nehra-training/hosts.j2
+        dest: /etc/myhosts
+
+
+
+
+
+

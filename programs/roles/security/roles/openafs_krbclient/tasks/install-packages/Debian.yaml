@@ -1,0 +1,7 @@
+---
+- name: Install kerberos workstation
+  become: yes
+  apt:
+    name: krb5-user
+    state: present
+    update_cache: yes

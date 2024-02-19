@@ -1,0 +1,16 @@
+# Ignore vim files:
+*~
+*.swp
+*.swo
+# Ignore vscode/ium
+.vscode
+# Ignore tests
+tests/output
+# Ignore builds
+zabbix-zabbix*.tar.gz
+# Ignore molecule encryption test files
+*.key
+*.crt
+*.csr
+*.srl
+*.psk

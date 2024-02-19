@@ -1,0 +1,13 @@
+---
+- name: test
+  hosts: all
+  gather_facts: true
+  tasks:
+    - debug:
+        var: ansible_facts['default_ipv4']['interface']
+
+        #ansible test -m setup -a "filter=ansible_interfaces[0]"
+        #
+    - template:
+        src: /home/ansible-user/ansible/ex294/nehra-training/sample.j2
+        dest: /tmp/sample.txt

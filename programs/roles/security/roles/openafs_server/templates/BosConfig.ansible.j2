@@ -1,0 +1,34 @@
+restrictmode {{ afs_bosserver_restricted_mode | ternary('1', '0') }}
+restarttime 16 0 0 0 0
+checkbintime 3 0 5 0 0
+{% if afs_is_dbserver %}
+bnode simple ptserver 1
+parm {{ afs_ptserver }}{{ ' ' if afs_ptserver_opts else '' }}{{ afs_ptserver_opts }}
+end
+bnode simple vlserver 1
+parm {{ afs_vlserver }}{{ ' ' if afs_vlserver_opts else '' }}{{ afs_vlserver_opts }}
+end
+{% endif %}
+{% if afs_is_fileserver %}
+{% if afs_fileserver_type == 'dafs' %}
+bnode dafs dafs {{ afs_server_cold_start | ternary('0', '1') }}
+parm {{ afs_dafileserver }}{{ ' ' if afs_dafileserver_opts else '' }}{{ afs_dafileserver_opts }}
+parm {{ afs_davolserver }}{{ ' ' if afs_davolserver_opts else '' }}{{ afs_davolserver_opts }}
+parm {{ afs_salvageserver }}{{ ' ' if afs_salvageserver_opts else '' }}{{ afs_salvageserver_opts }}
+parm {{ afs_dasalvager }}{{ ' ' if afs_dasalvager_opts else '' }}{{ afs_dasalvager_opts }}
+end
+{% else %}
+bnode fs fs {{ afs_server_cold_start | ternary('0', '1') }}
+parm {{ afs_fileserver }}{{ ' ' if afs_fileserver_opts else '' }}{{ afs_fileserver_opts }}
+parm {{ afs_volserver }}{{ ' ' if afs_volserver_opts else '' }}{{ afs_volserver_opts }}
+parm {{ afs_salvager }}{{ ' ' if afs_salvager_opts else '' }}{{ afs_salvager_opts }}
+end
+{% endif %}
+{% endif %}
+{% for bnode in afs_bosserver_bnodes %}
+bnode {{ bnode.type }} {{ bnode.name }} {{ bnode.goal }}
+{% for parm in bnode.parm %}
+parm {{ parm }}
+{% endfor %}
+end
+{% endfor %}

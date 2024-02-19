@@ -1,0 +1,13 @@
+---
+- name: user create
+  hosts: dev
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: create user
+      user:
+        name: john3
+        expires: '1714363200' 
+        password_expire_max: 10
+        state: present
+

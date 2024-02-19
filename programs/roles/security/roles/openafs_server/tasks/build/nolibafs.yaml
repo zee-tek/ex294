@@ -1,0 +1,49 @@
+---
+#
+# Build (or rebuild) the userspace binaries only for a node that
+# is only a server.
+#
+
+- debug:
+    var: afs_nolibafs_configure_options
+
+- debug:
+    var: afs_configure_options
+
+- name: Build OpenAFS binaries
+  openafs_contrib.openafs.openafs_build:
+    state: built
+    clean: "{{ afs_clean_build | bool }}"
+    build_module: no
+    srcdir: "{{ afs_topdir }}"
+    destdir: "{{ afs_topdir }}/packages/dest"
+    transarc_paths: "{{ afs_transarc_build }}"
+    configure_options: "{{ afs_nolibafs_configure_options | d(afs_configure_options) | d(omit) }}"
+    configure_environment: "{{ afs_nolibafs_configure_environment | d(afs_configure_environment) | d(omit) }}"
+    fakeroot: "{{ afs_fakeroot | d(omit) }}"
+  register: build_results
+
+- name: Build results
+  debug:
+    var: build_results
+
+- name: Store build facts
+  become: yes
+  openafs_contrib.openafs.openafs_store_facts:
+    state: update
+    facts:
+      build_completed: yes
+      destdir: "{{ build_results.destdir }}"
+      dirs: "{{ build_results.install_dirs }}"
+  when:
+    - build_results.changed
+    - not ansible_check_mode
+
+- assert:
+    that:
+      - ansible_local.openafs.dirs.afsbosconfigdir is defined
+      - ansible_local.openafs.dirs.afsconfdir is defined
+      - ansible_local.openafs.dirs.afsdbdir is defined
+      - ansible_local.openafs.dirs.afslocaldir is defined
+      - ansible_local.openafs.dirs.afslogsdir is defined
+      - ansible_local.openafs.dirs.viceetcdir is defined

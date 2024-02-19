@@ -1,0 +1,4 @@
+---
+- name: SELinux relabel
+  become: yes
+  openafs_contrib.openafs.openafs_selinux_relabel:

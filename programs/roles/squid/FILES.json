@@ -1,0 +1,348 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/CI.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe4e78479bd550ae9e5db6ba3d8a959838cce80d118a8b54e51e01e4da365f6b",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0751429ddbb28d16564b4a868c6e6619bd7728d4cb93dc700c7a89682affade2",
+   "format": 1
+  },
+  {
+   "name": ".yamllint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5845e18e9f23155f423207df9abac970aed687c638620bc2c9ee06706191054b",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "97e9e502813c5b1a1f36142cb2de544f379eb5f08541f000c60803c6aa06c6ab",
+   "format": 1
+  },
+  {
+   "name": "molecule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template/Dockerfile.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5a8ade0120da59e08d617495b3d311d516c485e20c6d7b218b8ed0399039f9f",
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c20fdb82dca4937fb0bd8860214d6679cafe70d999dceb98647867f2730d8b3",
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6cf6157a0ca69a1e2dbaa5cb1f9c8c3d015cf725223058412a65c43125d95cd",
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template/templates/squid.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d4264e00018436e6938c9c73e84152af4cb171c2f29e3d0dd086ba1fb216572",
+   "format": 1
+  },
+  {
+   "name": "molecule/custom_template/verify.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b0d7416c39e9dd43b285388a9b8469af154d90332c1b23421b10d645742b22c",
+   "format": 1
+  },
+  {
+   "name": "molecule/default",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/default/Dockerfile.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5a8ade0120da59e08d617495b3d311d516c485e20c6d7b218b8ed0399039f9f",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/INSTALL.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e469827a621deca25edffd1a36cc5d2aaef07ba2b70b9d7736e5e8e3361ba2c2",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "85ef8bdf838b48d12870abbdb7a1a37c9cfbcdc1b570cba8aec19b1746967f78",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/verify.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1878d352aaea6dcf244cfe866fd068a5a99aadd4123f67c0fdfd10a94d305e4a",
+   "format": 1
+  },
+  {
+   "name": "molecule/default/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6cf6157a0ca69a1e2dbaa5cb1f9c8c3d015cf725223058412a65c43125d95cd",
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg/Dockerfile.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5a8ade0120da59e08d617495b3d311d516c485e20c6d7b218b8ed0399039f9f",
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg/converge.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13d6f46f6637c35178cd5e84e782062d9c1e41ab1e0501394cc487d1b55a10a7",
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg/molecule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6cf6157a0ca69a1e2dbaa5cb1f9c8c3d015cf725223058412a65c43125d95cd",
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg/templates/squid.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df251b851c3630d5f428d0e98fccd87d1f3155089443bae243e86294b7d26b15",
+   "format": 1
+  },
+  {
+   "name": "molecule/squid_cfg/verify.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "491cad561dc72edb965b36439923d68354569e86a6e5bae8b76ba53d425206d4",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c82ee692702ec1dd604cdbc38ff252114e5204e1b0627045a66c9451e7a918ac",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9146228f796d95136a2b7846136763937bedd16c2a2385a7b2d89bca4601a22",
+   "format": 1
+  },
+  {
+   "name": "roles/server/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/defaults/main-orig.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4076c2283e54dfb4d9e4fc01587724d8b55ad6a0dbbd07ba43b19c46587ea7f6",
+   "format": 1
+  },
+  {
+   "name": "roles/server/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b44a7c86582554f117c315a5985ffa994763fd8ebf38b1e5732f30de7a50303d",
+   "format": 1
+  },
+  {
+   "name": "roles/server/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e5021e91b841b9ed9b40bbede64f527bb223e9667dafaba069bce2de118fe91",
+   "format": 1
+  },
+  {
+   "name": "roles/server/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0707d238d7a4802e91aab46341f7ae636716c06837dcf807b73356cf723e3827",
+   "format": 1
+  },
+  {
+   "name": "roles/server/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c647a2f5c6584bc390a9d6b4c0e5faa885e0536c65f9150d6cbdd774dec4ed96",
+   "format": 1
+  },
+  {
+   "name": "roles/server/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/templates/mafalb.squid.macros.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "662929262909fd66abbcac30a935e61cd721899e9be3cef99634fa3f61404960",
+   "format": 1
+  },
+  {
+   "name": "roles/server/templates/mafalb.squid.server.conf.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3332db9032461bd6070fa80a73481f3441ecd9c0a4f078a2cf861af38a61e19",
+   "format": 1
+  },
+  {
+   "name": "roles/server/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/server/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc937b9b4c41abbcc31ae37fe325d1b6dc34bf99858b6eedfc90ce4cf2926a96",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9e14ae0fa5bd0e9ba19e865d079f3bb79737c659d90efd868686fc4ef09bace",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

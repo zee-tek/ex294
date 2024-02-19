@@ -1,0 +1,37 @@
+---
+# Variable sanity checks and initialization.
+
+- name: Verify node is a server
+  assert:
+    that: afs_is_server == True
+
+- name: Verify install method
+  assert:
+    that:
+      - afs_install_method is defined
+      - afs_install_method in ['managed', 'packages', 'bdist', 'sdist', 'source', 'none']
+
+- name: Install method consistency check
+  fail:
+    msg: >
+      Install method {{ afs_install_method }} does not match
+      last used method {{ ansible_local.openafs.install_method }}.
+  when: >
+    ansible_local.openafs.install_method is defined
+    and ansible_local.openafs.install_method != afs_install_method
+
+- name: Load CellServDB values
+  set_fact:
+    afs_csdb: "{{ lookup('file', afs_csdb_file) | from_yaml }}"
+  when:
+    - afs_csdb is undefined
+    - afs_csdb_file is defined
+
+- name: Verify CellServDB values are defined
+  assert:
+    that:
+      - afs_csdb is defined
+      - afs_csdb.cell is defined
+      - afs_csdb.desc is defined
+      - afs_csdb.hosts is defined
+      - afs_csdb.hosts | count > 0

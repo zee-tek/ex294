@@ -1,0 +1,32 @@
+---
+- name: "openSUSE-15: Install build requirements"
+  become: yes
+  community.general.zypper:
+    state: present
+    name:
+      - autoconf
+      - automake
+      - bind-utils
+      - bison
+      - bzip2
+      - fdupes
+      - firewall-macros
+      - flex
+      - fuse-devel
+      - gcc
+      - git
+      - kernel-devel
+      - kernel-syms
+      - krb5-devel
+      - libevent-devel
+      - libjansson-devel
+      - libopenssl-devel
+      - libtirpc-devel
+      - libtool
+      - make
+      - ncurses-devel
+      - pkg-config
+      - rpm-build
+      - swig
+      - wget
+  tags: root

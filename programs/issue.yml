@@ -1,0 +1,20 @@
+---
+- name: configure issue file
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: setup issue file
+      copy:
+        dest: /etc/issue
+        content: "development"
+        #force: yes
+      when: inventory_hostname in groups['dev']
+
+     
+    - name: setup issue file
+      copy:
+        dest: /etc/issue
+        content: "test"
+        #force: yes
+      when: inventory_hostname in groups['test']

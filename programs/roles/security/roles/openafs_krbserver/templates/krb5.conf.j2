@@ -1,0 +1,16 @@
+# {{ ansible_managed }}
+
+[libdefaults]
+    default_realm = {{ afs_realm }}
+{% if afs_krb_dns_lookup_kdc is defined %}
+    dns_lookup_kdc = {{ afs_krb_dns_lookup_kdc | lower }}
+{% endif %}
+{% if afs_krb_dns_lookup_realm is defined %}
+    dns_lookup_realm = {{ afs_krb_dns_lookup_realm | lower }}
+{% endif %}
+
+[realms]
+    {{ afs_realm }} = {
+        kdc = {{ afs_krb_kdc }}
+        admin_server = {{ afs_krb_admin_server }}
+    }

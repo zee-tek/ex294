@@ -1,0 +1,11 @@
+---
+- name: "FreeBSD: Install development packages"
+  become: yes
+  community.general.pkgng:
+    state: present
+    name:
+      - autoconf
+      - automake
+      - fakeroot
+      - git
+      - libtool

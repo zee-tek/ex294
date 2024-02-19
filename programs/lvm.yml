@@ -1,0 +1,33 @@
+---
+- name: lvm
+  hosts: dev
+  gather_facts: true
+  tasks:
+    - name: Create lv
+      block:
+        - name: first check if research vg exists or not
+          debug:
+            #var: ansible_facts['lvm']['vgs']
+            msg: "research vg not found"
+          when: "'research' not in ansible_facts['lvm']['vgs']"
+        - name: Create lvm
+          shell: lvcreate -n research -L 2G /dev/research
+          register: out
+          when: "'research' in ansible_facts['lvm']['vgs']"
+
+      rescue:
+        - name: Create with less size
+          shell: lvcreate -n research -L 900MB /dev/research
+          when: 'research' in ansible_facts['lvm']['lvs'] and 'research' in ansible_facts['lvm']['vgs']"
+        
+        - name: Get filesystem info
+          shell: blkid
+          register: fs
+
+        - debug:
+            var: fs
+      always:
+        - name: format filesystem
+          shell: mkfs.ext4 /dev/research/research
+          when: "'research' in ansible_facts['lvm']['lvs'] and 'research' not in fs.stdout"
+          

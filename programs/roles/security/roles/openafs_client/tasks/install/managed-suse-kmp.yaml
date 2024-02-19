@@ -1,0 +1,98 @@
+---
+#
+# Install a prebuilt OpenAFS kernel module for the currently running kernel
+# version. This install method requires a private zypper repo populated with
+# OpenAFS packages and prebuilt kernel module rpm package files (openafs-kmp).
+#
+# Just installing the 'openafs-kmp' package will install a kernel module for
+# the most recent kernel version in the zypper repository, not neccessarily the
+# version currently running on the remote node. In order to obviate the need to
+# update the kernel and endure a reboot when importing this role, we attempt to
+# install the openafs-kmp with the full version name. This is a bit tricky
+# since the full name also contains on the OpenAFS version name. First, we
+# ensure the base openafs package is installed, and then query the version
+# string from the installed base package. Then we use that version string plus
+# the running kernel version to specify the full openafs-kmp package name.
+#
+- name: Install module build pre-requirements
+  import_role:
+    name: openafs_contrib.openafs.openafs_devel_kernel
+
+- set_fact:
+    kernel_version: "{{ ansible_kernel | regex_replace('-default|-preempt|-vanilla', '') }}"
+    kernel_flavor: "{{ ansible_kernel | split('-') | last }}"
+
+- name: Add OpenAFS zypper repo
+  become: yes
+  community.general.zypper_repository:
+    name: openafs
+    description: OpenAFS zypper repo
+    repo: "{{ repo }}"
+    disable_gpg_check: yes
+  loop:
+    - "{{ afs_zypper_repo }}"
+  loop_control:
+    loop_var: repo
+
+- name: Install OpenAFS base package
+  become: yes
+  community.general.zypper:
+    state: present
+    name:
+      - openafs
+
+- name: Query OpenAFS version
+  become: yes
+  command: rpm -q --queryformat "%{VERSION}" openafs
+  changed_when: False
+  register: rpm_query
+  check_mode: no
+
+- name: Install OpenAFS client with kmp
+  become: yes
+  community.general.zypper:
+    state: present
+    name:
+      - openafs
+      - openafs-client
+      - "openafs-kmp-{{ kernel_flavor }}-{{ rpm_query.stdout }}_k{{ kernel_version | regex_replace('-', '_') }}"
+
+- name: Get installation paths
+  openafs_contrib.openafs.openafs_get_install_paths:
+  register: install_results
+
+- name: Store installation facts
+  become: yes
+  openafs_contrib.openafs.openafs_store_facts:
+    state: update
+    facts:
+      install_method: "{{ afs_install_method }}"
+      client_installed: yes
+      client_service_name: openafs-client
+      bins: "{{ install_results.bins }}"
+      dirs: "{{ install_results.dirs }}"
+      cacheinfo: "{{ install_results.cacheinfo }}"
+  when: not ansible_check_mode
+
+- name: Set client startup options.
+  become: yes
+  lineinfile:
+    path: "/etc/sysconfig//{{ ansible_local.openafs.client_service_name }}"
+    regexp: "^AFSD_ARGS="
+    line: 'AFSD_ARGS="{{ afs_afsd_opts }}"'
+    state: present
+  when: afs_afsd_opts is defined
+  notify:
+    - "client configuration changed"
+
+- name: Set client crypt option.
+  become: yes
+  vars:
+    crypt: "{{ afs_crypt | d('off') }}"
+  lineinfile:
+    path: "/etc/sysconfig//{{ ansible_local.openafs.client_service_name }}"
+    regexp: "^CRYPT="
+    line: 'CRYPT="{{ crypt }}"'
+    state: present
+  notify:
+    - "client configuration changed"

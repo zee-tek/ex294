@@ -1,0 +1,42 @@
+---
+- name: facts-check
+  hosts: dev
+  gather_facts: true
+  become: yes
+  tasks:
+
+    #- setup:
+    #- set_fact:
+    #    vgsize: "{{ ansible_facts['lvm']['vgs']['rhel']['size_g']|int }}"
+
+    #- fail:
+    #    msg: "vg size is not enough"
+    #  when: vgsize |int < 20
+
+    #- debug:
+    #    msg: "enogh space"
+    #  when: vgsize | int >19
+    #
+    - setup:
+    - set_fact:
+        disk_info: "{{ ansible_facts['devices']['sda']['size'] }}"
+    #- debug:
+    #    var: disk_info
+    #- debug:
+     #   var: out
+     #   var: ansible_facts['devices']['sda']['size']
+     # when: ansible_facts['devices']['sda'] is defined and 
+  
+    - name: create partition
+      block:
+        - name: create partition
+          #debug:
+          #  var: ansible_facts['devices']['sda']['size']
+          command: parted /dev/nvme0n1 --script mklabel gpt mkpart primary 40GB 100%
+          when: "'nvme0n1' in ansible_facts['devices']"
+
+      rescue:
+        - name: smaller size
+          command: parted /dev/nvme0n1 --script mklabel gpt mkpart primary 1MiB 1GB  100%
+          changed_when: false
+          when: "'nvme0n1p4' not in ansible_facts['devices']['sda']"

@@ -1,0 +1,6 @@
+---
+- name:
+  hosts:
+  gather_facts:
+  become:
+  tasks:

@@ -1,0 +1,10 @@
+---
+- name: hardware report
+  hosts: dev,test
+  gather_facts: yes
+  become: yes
+  tasks:
+    - name: create hardware file
+      template:
+        src: /home/ansible-user/ansible/ex294/nehra-training/hwreport.j2
+        dest: /root/hwreport.txt

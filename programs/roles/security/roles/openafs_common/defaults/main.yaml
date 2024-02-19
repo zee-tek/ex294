@@ -1,0 +1,111 @@
+---
+# This node is an OpenAFS server.
+afs_is_server: "{{
+  'afs_servers' in group_names or
+  'afs_databases' in group_names or
+  'afs_fileservers' in group_names }}"
+
+# This node is an OpenAFS client.
+afs_is_client: "{{
+  'afs_clients' in group_names or
+  'afs_admin_client' in group_names }}"
+
+# AFS cell name.
+afs_cell: example.com
+
+# Kerberos realm name.
+afs_realm: "{{ afs_cell | upper }}"
+
+# Path to files on controller to be uploaded to remote nodes.
+afs_cell_files: "{{ '~/.ansible-openafs' | expanduser }}/cell/{{ afs_cell }}"
+
+# CellServDB information. Undefined by default. Should be defined in your
+# inventory or the external csdb.yaml file should be created by the generate_csdb
+# task.
+#
+# afs_csdb:
+#   cell: example.com
+#   desc: Cell name
+#   hosts:
+#     - ip: 192.168.122.219
+#       name: afs02
+#       clone: no
+#     - ip: 192.168.122.154
+#       name: afs03
+#       clone: no
+#     - ip: 192.168.122.195
+#       name: afs04
+#       clone: no
+
+# Path to the CellServDB yaml file on the controller. This file is only
+# used when afs_csdb is not defined in your inventory.
+afs_csdb_file: "{{ afs_cell_files }}/csdb.yaml"
+
+# Regular user name.
+afs_user: "{{ ansible_user | d(lookup('env', 'USER') | d('ansible', True)) }}"
+
+# The pts id of the afs_user.
+# Default is 0 to let the ptserver select the next available id.
+afs_user_id: "{{ ansible_user_id | d(0, True) | int }}"
+
+# Admin user name.
+afs_admin: "{{ afs_user + '.admin' }}"
+
+# Temporary directory on remote nodes.
+afs_tmpdir: /tmp/ansible-openafs
+
+# Project build directory on remote nodes.
+afs_topdir: ~/openafs
+
+# Installation method; managed, package, bdist, sdist, source, none
+# afs_install_method: (default is platform dependent)
+
+# Source checkout method; one of 'git', 'sdist_upload', 'gerrit'
+afs_checkout_method: git
+
+# Package repository url or path for 'managed' installs.
+# The default is platform dependent, see vars/*.yaml
+afs_yum_repo: "{{ _afs_yum_repo }}"
+afs_zypper_repo: "{{ _afs_zypper_repo }}"
+afs_pkg5_repo: "{{ _afs_pkg5_repo }}"
+afs_pkg5_publisher: "{{ _afs_pkg5_publisher }}"
+
+# Path to installation tarball on controller for non-managed installs.
+afs_install_archive: ""
+
+# Git repository and branch info for builds and source based installs.
+_afs_git_repo: "git://git.openafs.org/openafs.git"
+_afs_git_version: "master"
+
+# Gerrit host name  when afs_checkout_method is 'gerrit'.
+afs_gerrit_host: "gerrit.openafs.org"
+
+# Gerrit number to fetch when afs_checkout_method is 'gerrit'. (no default)
+#afs_gerrit_number:
+
+# The configure options when installing from source. The default value is
+# platform dependent.
+#afs_configure_options:
+#afs_configure_environment: {}
+
+# The configure options when installing userspace only binaries from source.
+# Default value is platform dependent.
+#afs_nolibafs_configure_options:
+#afs_nolibafs_configure_environment: {}
+
+# When the install method is 'sdist' or 'source', force a rebuild and reinstall
+# even if a change in the source code checkout was not detected.
+afs_always_build: no
+
+# When the install method is 'sdist' or 'source', clean any build artifacts that
+# may be left from a previous build. Set to no to let make only rebuild binaries
+# which are out of date with the sources, which should be faster when rebuilding
+# the same branch as the previous build.
+afs_clean_build: yes
+
+# When the install method is 'sdist' or 'source', add --enable-transarc-paths
+# to the configure options.
+afs_transarc_build: "{{ _afs_transarc_build | d('no') }}"
+
+# root group name. May be root or wheel depending on the OS.
+afs_root_group: "{{ _afs_root_group | d('root') }}"

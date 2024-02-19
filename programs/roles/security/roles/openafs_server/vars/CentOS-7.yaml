@@ -1,0 +1,8 @@
+---
+# OS dependent variables
+afs_firewall: firewalld
+
+# SELinux
+afs_selinux_tools:
+  - policycoreutils-python
+  - setools-console

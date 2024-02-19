@@ -1,0 +1,46 @@
+---
+# Variable sanity checks and initialization.
+
+- name: Verify node is a client
+  assert:
+    that: afs_is_client
+
+- name: Enforce server install before client
+  assert:
+    that:
+      - ansible_local.openafs.server_installed is defined
+      - ansible_local.openafs.server_installed == True
+  when:
+    - afs_is_server
+
+- name: Verify install method
+  assert:
+    that:
+      - afs_install_method is defined
+      - afs_install_method in ['managed', 'packages', 'bdist', 'sdist', 'source', 'none']
+
+- name: Install method consistency check
+  fail:
+    msg: >
+      Install method '{{ afs_install_method }}' does not match
+      last used method '{{ ansible_local.openafs.install_method }}'.
+  when: >
+    ansible_local.openafs.install_method is defined
+    and ansible_local.openafs.install_method != afs_install_method
+
+- name: Load CellServDB values
+  set_fact:
+    afs_csdb: "{{ lookup('file', afs_csdb_file) | from_yaml }}"
+  when:
+    - afs_csdb is undefined
+    - afs_csdb_file is defined
+    - afs_csdb_file | count > 0
+
+- name: Default CellServDB values
+  set_fact:
+    afs_csdb:
+      cell: "{{ afs_cell }}"
+      desc: "Cell name"
+      hosts: []
+  when:
+    - afs_csdb is undefined
